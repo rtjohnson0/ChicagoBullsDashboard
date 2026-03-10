@@ -1,0 +1,29 @@
+{
+  "date": "2026-03-09",
+  "bulls_basic": {
+    "pts": 115.4,
+    "reb": 44.8,
+    "ast": 28.7,
+    "tov": 15.1,
+    "fgm": 41.9,
+    "fga": 89.6,
+    "fg3m": 14.6,
+    "fg3a": 40.1,
+    "ftm": 17.0,
+    "fta": 21.8
+  },
+  "bulls_advanced": {
+    "off_rating": 112.1,
+    "def_rating": 116.7,
+    "net_rating": -4.6,
+    "ts_pct": 0.582,
+    "pace": 102.48
+  },
+  "game_today": false,
+  "next_game": {
+    "date": null,
+    "opponent": null,
+    "is_home": null,
+    "time": "TBD"
+  }
+}
