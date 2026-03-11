@@ -1,35 +1,12 @@
 {
-  "date": "2026-03-09",
-  "bulls_basic": {
-    "pts": 115.4,
-    "reb": 44.8,
-    "ast": 28.7,
-    "tov": 15.1,
-    "fgm": 41.9,
-    "fga": 89.6,
-    "fg3m": 14.6,
-    "fg3a": 40.1,
-    "ftm": 17.0,
-    "fta": 21.8
+  "date": "2026-03-11",
+  "bulls_basic": {},
+  "bulls_advanced": {},
+  "calculated": {},
+  "game_today": {
+    "opponent": "Warriors",
+    "home": false,
+    "status": "Half"
   },
-  "bulls_advanced": {
-    "off_rating": 112.1,
-    "def_rating": 116.7,
-    "net_rating": -4.6,
-    "ts_pct": 0.582,
-    "pace": 102.48,
-    "pie": 0.485
-  },
-  "calculated": {
-    "offensive_rating": 100.9694466804326,
-    "defensive_rating": 116.7,
-    "net_rating": -4.6,
-    "pace": 102.48,
-    "efg_pct": 0.5491071428571428,
-    "ts_pct_calc": 0.5817001371078313,
-    "tov_pct": 0.13211773352465617,
-    "orb_pct": 0
-  },
-  "game_today": null,
   "next_game": null
 }
