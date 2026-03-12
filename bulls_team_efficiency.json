@@ -1,12 +1,8 @@
 {
-  "date": "2026-03-11",
+  "date": "2026-03-12",
   "bulls_basic": {},
   "bulls_advanced": {},
   "calculated": {},
-  "game_today": {
-    "opponent": "Warriors",
-    "home": false,
-    "status": "Final/OT"
-  },
+  "game_today": null,
   "next_game": null
 }
