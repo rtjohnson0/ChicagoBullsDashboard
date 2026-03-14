@@ -191,11 +191,11 @@ data = {
     "calculated": calculated,
     "game_today": today_game,
     "next_game": next_game,
-    "injuries": injuries  # Now added here!
+    "injuries": injuries  # Now saved here!
 }
 
 with open('bulls_team_efficiency.json', 'w') as f:
     json.dump(data, f, indent=2)
 
-print("\nSaved: bulls_team_efficiency.json (now with injuries)")
+print("\nSaved: bulls_team_efficiency.json (with injuries)")
 print("Script finished.")
