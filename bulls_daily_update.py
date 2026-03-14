@@ -1,4 +1,6 @@
 import pandas as pd
+import requests
+from bs4 import BeautifulSoup
 from nba_api.stats.endpoints import leaguedashteamstats, leaguegamefinder
 from nba_api.live.nba.endpoints import scoreboard
 from nba_api.stats.static import teams
@@ -11,12 +13,13 @@ print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 bulls_id = 1610612741
 current_season = '2025-26'
 
-# Initialize variables to avoid Pylance warnings
+# Initialize variables
 bulls_basic = {}
 bulls_advanced = {}
 calculated = {}
 today_game = None
 next_game = None
+injuries = []
 
 # 1. Basic & Advanced Stats
 try:
@@ -72,7 +75,7 @@ try:
         for k, v in bulls_advanced.items():
             print(f"{k.replace('_', ' ').title()}: {v:.2f}")
 
-        # 2. Calculated Advanced Metrics
+        # Calculated Advanced Metrics
         poss = (bulls['FGA'] + 0.44 * bulls['FTA'] + bulls['TOV'] - bulls.get('OREB', 0))
         poss = max(1, poss)
 
@@ -95,7 +98,7 @@ try:
 except Exception as e:
     print(f"Stats error: {e}")
 
-# 3. Today's Game Check
+# 2. Today's Game Check
 try:
     sb = scoreboard.ScoreBoard()
     games = sb.get_dict()['scoreboard']['games']
@@ -123,7 +126,7 @@ try:
 except Exception as e:
     print(f"Today's game error: {e}")
 
-# 4. Next Game if No Today
+# 3. Next Game if No Today
 if not today_game:
     try:
         games = leaguegamefinder.LeagueGameFinder(team_id_nullable=bulls_id, season_nullable=current_season).get_data_frames()[0]
@@ -141,22 +144,58 @@ if not today_game:
             }
             print(f"\nNext game: {next_game['date']} vs {next_game['opponent']} ({'Home' if is_home else 'Away'})")
         else:
-            print("\nNo upcoming games")
+            print("\nNo upcoming games (season may be over or playoffs)")
     except Exception as e:
         print(f"Next game error: {e}")
 
-# 5. Save JSON
+# 4. Injury Report (CBS Sports scrape)
+try:
+    url = "https://www.cbssports.com/nba/teams/chi/chicago-bulls/injuries"
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    injuries = []
+    table = soup.find('table')
+    if table:
+        rows = table.find_all('tr')[1:]  # skip header
+        for row in rows:
+            cols = row.find_all('td')
+            if len(cols) >= 4:
+                player = cols[0].text.strip()
+                position = cols[1].text.strip()
+                injury = cols[2].text.strip()
+                status = cols[3].text.strip()
+                injuries.append({
+                    "player": player,
+                    "position": position,
+                    "injury": injury,
+                    "status": status
+                })
+
+    if injuries:
+        print("\nBulls Injury Report (latest):")
+        for inj in injuries:
+            print(f"{inj['player']} ({inj['position']}): {inj['injury']} - {inj['status']}")
+    else:
+        print("\nNo injuries found or page structure changed")
+except Exception as e:
+    print(f"Injury scrape error: {e}")
+    injuries = []
+
+# 5. Save JSON with injuries included
 data = {
     "date": datetime.now().strftime('%Y-%m-%d'),
     "bulls_basic": bulls_basic,
     "bulls_advanced": bulls_advanced,
     "calculated": calculated,
     "game_today": today_game,
-    "next_game": next_game
+    "next_game": next_game,
+    "injuries": injuries  # Now added here!
 }
 
 with open('bulls_team_efficiency.json', 'w') as f:
     json.dump(data, f, indent=2)
 
-print("\nSaved: bulls_team_efficiency.json")
+print("\nSaved: bulls_team_efficiency.json (now with injuries)")
 print("Script finished.")
