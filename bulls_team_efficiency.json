@@ -29,8 +29,14 @@
     {
       "away_team": "Warriors",
       "home_team": "Knicks",
-      "status": "END Q3",
-      "score": "80 - 83"
+      "status": "Q4 7:39",
+      "score": "88 - 93"
+    },
+    {
+      "away_team": "Jazz",
+      "home_team": "Kings",
+      "status": "Q1 10:08",
+      "score": "0 - 3"
     },
     {
       "away_team": "Timberwolves",
@@ -61,12 +67,6 @@
       "home_team": "76ers",
       "status": "Final",
       "score": "103 - 109"
-    },
-    {
-      "away_team": "Jazz",
-      "home_team": "Kings",
-      "status": "10:00 pm ET",
-      "score": "0 - 0"
     }
   ]
 }
