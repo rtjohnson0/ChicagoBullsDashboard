@@ -20,7 +20,7 @@ print("=== Bulls Daily Team Efficiency Update ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 bulls_id = 1610612741
-current_season = '2024-25'  # safer season until API updates
+current_season = '2025-26'  # safer season until API updates
 
 bulls_basic = {}
 bulls_advanced = {}
@@ -30,7 +30,7 @@ next_game = None
 injuries = []
 
 # ===============================
-# 1. TEAM STATS
+# 1. TEAM STATS (Robust version)
 # ===============================
 
 try:
@@ -50,11 +50,15 @@ try:
         per_mode_detailed='PerGame'
     ).get_data_frames()[0]
 
-    team_data = pd.merge(
-        basic[['TEAM_ID','PTS','REB','AST','TOV','FGM','FGA','FG3M','FG3A','FTM','FTA']],
-        adv[['TEAM_ID','OFF_RATING','DEF_RATING','NET_RATING','TS_PCT','PACE']],
-        on='TEAM_ID'
-    )
+    # Print columns to verify names
+    print("Basic columns:", basic.columns.tolist())
+    print("Advanced columns:", adv.columns.tolist())
+
+    # Only keep columns that exist (prevents KeyError)
+    basic_cols = [c for c in ['TEAM_ID','PTS','REB','AST','TOV','FGM','FGA','FG3M','FG3A','FTM','FTA'] if c in basic.columns]
+    adv_cols = [c for c in ['TEAM_ID','OFF_RATING','DEF_RATING','NET_RATING','TS_PCT','PACE'] if c in adv.columns]
+
+    team_data = pd.merge(basic[basic_cols], adv[adv_cols], on='TEAM_ID', how='inner')
 
     bulls_row = team_data[team_data['TEAM_ID'] == bulls_id]
 
@@ -62,49 +66,30 @@ try:
 
         bulls = bulls_row.iloc[0]
 
-        bulls_basic = {
-            "pts": float(bulls['PTS']),
-            "reb": float(bulls['REB']),
-            "ast": float(bulls['AST']),
-            "tov": float(bulls['TOV']),
-            "fgm": float(bulls['FGM']),
-            "fga": float(bulls['FGA']),
-            "fg3m": float(bulls['FG3M']),
-            "fg3a": float(bulls['FG3A']),
-            "ftm": float(bulls['FTM']),
-            "fta": float(bulls['FTA'])
-        }
+        # Basic stats
+        bulls_basic = {col.lower(): float(bulls[col]) for col in basic_cols if col != 'TEAM_ID'}
 
-        bulls_advanced = {
-            "off_rating": float(bulls['OFF_RATING']),
-            "def_rating": float(bulls['DEF_RATING']),
-            "net_rating": float(bulls['NET_RATING']),
-            "ts_pct": float(bulls['TS_PCT']),
-            "pace": float(bulls['PACE'])
-        }
+        # Advanced stats
+        bulls_advanced = {col.lower(): float(bulls[col]) for col in adv_cols if col != 'TEAM_ID'}
 
         # Possessions estimate
-        poss = bulls['FGA'] + 0.44 * bulls['FTA'] + bulls['TOV']
+        poss = bulls.get('FGA',0) + 0.44 * bulls.get('FTA',0) + bulls.get('TOV',0)
         poss = max(poss,1)
 
         calculated = {
-            "efg_pct": (bulls['FGM'] + 0.5 * bulls['FG3M']) / bulls['FGA'] if bulls['FGA'] > 0 else 0,
-            "ts_pct_calc": bulls['PTS'] / (2 * (bulls['FGA'] + 0.44 * bulls['FTA'])) if bulls['FGA'] > 0 else 0,
-            "tov_pct": bulls['TOV'] / poss
+            "efg_pct": (bulls.get('FGM',0) + 0.5 * bulls.get('FG3M',0)) / bulls.get('FGA',1),
+            "ts_pct_calc": bulls.get('PTS',0) / (2 * (bulls.get('FGA',0) + 0.44 * bulls.get('FTA',0))),
+            "tov_pct": bulls.get('TOV',0) / poss
         }
 
-        print("Basic shape:", basic.shape)
-        print("Advanced shape:", adv.shape)
-        print(basic.head())
-
-        # Win probability estimate (analytics formula)
-        off = bulls['OFF_RATING']
-        deff = bulls['DEF_RATING']
-
-        win_prob = (off**14) / ((off**14) + (deff**14))
-        win_prob = round(win_prob * 100,1)
-
-        calculated["expected_win_pct"] = win_prob
+        # Win probability estimate
+        off = bulls.get('OFF_RATING', 0)
+        deff = bulls.get('DEF_RATING', 0)
+        if off > 0 and deff > 0:
+            win_prob = (off**14) / ((off**14) + (deff**14))
+            calculated["expected_win_pct"] = round(win_prob*100,1)
+        else:
+            calculated["expected_win_pct"] = None
 
         print("Bulls stats pulled successfully")
 
@@ -113,7 +98,6 @@ try:
 
 except Exception as e:
     print(f"Stats error: {e}")
-
 # ===============================
 # 2. LIVE SCOREBOARD
 # ===============================
