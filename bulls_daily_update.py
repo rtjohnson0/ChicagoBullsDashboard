@@ -20,7 +20,7 @@ print("=== Bulls Daily Team Efficiency Update ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 bulls_id = 1610612741
-current_season = '2025-26'  # safer season until API updates
+current_season = '2024-25'  # safer season until API updates
 
 bulls_basic = {}
 bulls_advanced = {}
