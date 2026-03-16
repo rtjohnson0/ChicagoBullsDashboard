@@ -4,8 +4,17 @@ import time
 from bs4 import BeautifulSoup
 from nba_api.stats.endpoints import leaguedashteamstats
 from nba_api.live.nba.endpoints import scoreboard
+from nba_api.stats.library.parameters import SeasonAll
+from nba_api.stats.library.http import NBAStatsHTTP
 from datetime import datetime
 import json
+
+NBAStatsHTTP.headers = {
+    'Host': 'stats.nba.com',
+    'User-Agent': 'Mozilla/5.0',
+    'Accept': 'application/json',
+    'Referer': 'https://stats.nba.com'
+}
 
 print("=== Bulls Daily Team Efficiency Update ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
@@ -83,6 +92,10 @@ try:
             "ts_pct_calc": bulls['PTS'] / (2 * (bulls['FGA'] + 0.44 * bulls['FTA'])) if bulls['FGA'] > 0 else 0,
             "tov_pct": bulls['TOV'] / poss
         }
+
+        print("Basic shape:", basic.shape)
+        print("Advanced shape:", adv.shape)
+        print(basic.head())
 
         # Win probability estimate (analytics formula)
         off = bulls['OFF_RATING']
