@@ -199,3 +199,32 @@ with open('bulls_team_efficiency.json', 'w') as f:
 
 print("\nSaved: bulls_team_efficiency.json (with injuries)")
 print("Script finished.")
+
+try:
+    sb = scoreboard.ScoreBoard()
+    all_games_today = sb.get_dict()['scoreboard']['games']
+
+    games_list = []
+    bulls_game = None
+
+    for g in all_games_today:
+        game_info = {
+            "away_team": g['awayTeam']['teamName'],
+            "home_team": g['homeTeam']['teamName'],
+            "status": g['gameStatusText'],
+            "is_live": g['gameStatus'] in [2, 3],  # 2= live, 3= halftime, etc.
+            "score": f"{g['awayTeam']['score']} - {g['homeTeam']['score']}" if g['awayTeam']['score'] > 0 else "N/A",
+        }
+        games_list.append(game_info)
+
+        if bulls_id == g['homeTeam']['teamId'] or bulls_id == g['awayTeam']['teamId']:
+            bulls_game = game_info
+
+    data["all_games_today"] = games_list
+    data["bulls_game_today"] = bulls_game
+
+    print(f"\nAll NBA games today: {len(games_list)}")
+    if bulls_game:
+        print("Bulls game today found!")
+except Exception as e:
+    print(f"Scoreboard error: {e}")
