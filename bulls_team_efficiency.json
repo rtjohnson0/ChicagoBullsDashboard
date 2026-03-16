@@ -24,5 +24,49 @@
       "injury": "Sun, Mar 15",
       "status": "Knee"
     }
+  ],
+  "all_games_today": [
+    {
+      "away_team": "Warriors",
+      "home_team": "Knicks",
+      "status": "Q3 7:50",
+      "score": "61 - 57"
+    },
+    {
+      "away_team": "Timberwolves",
+      "home_team": "Thunder",
+      "status": "Final",
+      "score": "103 - 116"
+    },
+    {
+      "away_team": "Mavericks",
+      "home_team": "Cavaliers",
+      "status": "Final",
+      "score": "130 - 120"
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "Raptors",
+      "status": "Final",
+      "score": "108 - 119"
+    },
+    {
+      "away_team": "Pacers",
+      "home_team": "Bucks",
+      "status": "Final",
+      "score": "123 - 134"
+    },
+    {
+      "away_team": "Trail Blazers",
+      "home_team": "76ers",
+      "status": "Final",
+      "score": "103 - 109"
+    },
+    {
+      "away_team": "Jazz",
+      "home_team": "Kings",
+      "status": "10:00 pm ET",
+      "score": "0 - 0"
+    }
   ]
 }
