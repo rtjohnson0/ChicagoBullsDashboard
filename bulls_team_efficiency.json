@@ -1,72 +1,76 @@
 {
-  "date": "2026-03-16",
+  "date": "2026-03-17",
   "bulls_basic": {},
   "bulls_advanced": {},
   "calculated": {},
-  "game_today": null,
+  "game_today": {
+    "opponent": "Grizzlies",
+    "home": true,
+    "status": "Final"
+  },
   "next_game": null,
   "injuries": [
     {
       "player": "C. SextonCollin Sexton",
       "position": "SG",
-      "injury": "Sun, Mar 15",
+      "injury": "Tue, Mar 17",
       "status": "Lower Leg"
     },
     {
-      "player": "A. SimonsAnfernee Simons",
-      "position": "SG",
-      "injury": "Sun, Mar 15",
-      "status": "Wrist"
-    },
-    {
-      "player": "J. IveyJaden Ivey",
-      "position": "SG",
-      "injury": "Sun, Mar 15",
+      "player": "I. OkoroIsaac Okoro",
+      "position": "SF",
+      "injury": "Tue, Mar 17",
       "status": "Knee"
     }
   ],
   "all_games_today": [
     {
-      "away_team": "Timberwolves",
-      "home_team": "Thunder",
+      "away_team": "Magic",
+      "home_team": "Hawks",
       "status": "Final",
-      "score": "103 - 116"
-    },
-    {
-      "away_team": "Mavericks",
-      "home_team": "Cavaliers",
-      "status": "Final",
-      "score": "130 - 120"
-    },
-    {
-      "away_team": "Pistons",
-      "home_team": "Raptors",
-      "status": "Final",
-      "score": "108 - 119"
-    },
-    {
-      "away_team": "Pacers",
-      "home_team": "Bucks",
-      "status": "Final",
-      "score": "123 - 134"
-    },
-    {
-      "away_team": "Trail Blazers",
-      "home_team": "76ers",
-      "status": "Final",
-      "score": "103 - 109"
+      "score": "112 - 124"
     },
     {
       "away_team": "Warriors",
-      "home_team": "Knicks",
+      "home_team": "Wizards",
       "status": "Final",
-      "score": "107 - 110"
+      "score": "125 - 117"
     },
     {
-      "away_team": "Jazz",
-      "home_team": "Kings",
+      "away_team": "Trail Blazers",
+      "home_team": "Nets",
       "status": "Final",
-      "score": "111 - 116"
+      "score": "114 - 95"
+    },
+    {
+      "away_team": "Suns",
+      "home_team": "Celtics",
+      "status": "Final",
+      "score": "112 - 120"
+    },
+    {
+      "away_team": "Grizzlies",
+      "home_team": "Bulls",
+      "status": "Final",
+      "score": "107 - 132"
+    },
+    {
+      "away_team": "Mavericks",
+      "home_team": "Pelicans",
+      "status": "Final",
+      "score": "111 - 129"
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Rockets",
+      "status": "Final",
+      "score": "100 - 92"
+    },
+    {
+      "away_team": "Spurs",
+      "home_team": "Clippers",
+      "status": "Final",
+      "score": "119 - 115"
     }
   ]
 }
