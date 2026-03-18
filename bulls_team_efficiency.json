@@ -1,13 +1,9 @@
 {
-  "date": "2026-03-17",
+  "date": "2026-03-18",
   "bulls_basic": {},
   "bulls_advanced": {},
   "calculated": {},
-  "game_today": {
-    "opponent": "Grizzlies",
-    "home": true,
-    "status": "Final"
-  },
+  "game_today": null,
   "next_game": null,
   "injuries": [
     {
@@ -25,52 +21,52 @@
   ],
   "all_games_today": [
     {
-      "away_team": "Magic",
-      "home_team": "Hawks",
+      "away_team": "Heat",
+      "home_team": "Hornets",
       "status": "Final",
-      "score": "112 - 124"
+      "score": "106 - 136"
     },
     {
-      "away_team": "Warriors",
+      "away_team": "Thunder",
+      "home_team": "Magic",
+      "status": "Final",
+      "score": "113 - 108"
+    },
+    {
+      "away_team": "Pistons",
       "home_team": "Wizards",
       "status": "Final",
-      "score": "125 - 117"
+      "score": "130 - 117"
     },
     {
-      "away_team": "Trail Blazers",
-      "home_team": "Nets",
+      "away_team": "Pacers",
+      "home_team": "Knicks",
       "status": "Final",
-      "score": "114 - 95"
+      "score": "110 - 136"
+    },
+    {
+      "away_team": "Cavaliers",
+      "home_team": "Bucks",
+      "status": "Final",
+      "score": "123 - 116"
     },
     {
       "away_team": "Suns",
-      "home_team": "Celtics",
+      "home_team": "Timberwolves",
       "status": "Final",
-      "score": "112 - 120"
+      "score": "104 - 116"
     },
     {
-      "away_team": "Grizzlies",
-      "home_team": "Bulls",
+      "away_team": "76ers",
+      "home_team": "Nuggets",
       "status": "Final",
-      "score": "107 - 132"
-    },
-    {
-      "away_team": "Mavericks",
-      "home_team": "Pelicans",
-      "status": "Final",
-      "score": "111 - 129"
-    },
-    {
-      "away_team": "Lakers",
-      "home_team": "Rockets",
-      "status": "Final",
-      "score": "100 - 92"
+      "score": "96 - 124"
     },
     {
       "away_team": "Spurs",
-      "home_team": "Clippers",
+      "home_team": "Kings",
       "status": "Final",
-      "score": "119 - 115"
+      "score": "132 - 104"
     }
   ]
 }
