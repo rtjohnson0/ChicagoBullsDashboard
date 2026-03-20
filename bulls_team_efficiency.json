@@ -1,72 +1,85 @@
 {
-  "date": "2026-03-16",
+  "date": "2026-03-20",
   "bulls_basic": {},
   "bulls_advanced": {},
   "calculated": {},
-  "game_today": null,
-  "next_game": null,
-  "injuries": [
-    {
-      "player": "C. SextonCollin Sexton",
-      "position": "SG",
-      "injury": "Sun, Mar 15",
-      "status": "Lower Leg"
-    },
-    {
-      "player": "A. SimonsAnfernee Simons",
-      "position": "SG",
-      "injury": "Sun, Mar 15",
-      "status": "Wrist"
-    },
-    {
-      "player": "J. IveyJaden Ivey",
-      "position": "SG",
-      "injury": "Sun, Mar 15",
-      "status": "Knee"
-    }
-  ],
+  "game_today": {
+    "away_team": "Cavaliers",
+    "home_team": "Bulls",
+    "status": "Half",
+    "score": "61 - 45",
+    "is_live": true
+  },
   "all_games_today": [
     {
-      "away_team": "Warriors",
-      "home_team": "Knicks",
-      "status": "Q4 7:39",
-      "score": "88 - 93"
+      "away_team": "Suns",
+      "home_team": "Spurs",
+      "status": "Q3 6:59",
+      "score": "67 - 61",
+      "is_live": true
     },
     {
-      "away_team": "Jazz",
-      "home_team": "Kings",
-      "status": "Q1 10:08",
-      "score": "0 - 3"
+      "away_team": "Bucks",
+      "home_team": "Jazz",
+      "status": "Q1 5:43",
+      "score": "10 - 15",
+      "is_live": true
     },
     {
-      "away_team": "Timberwolves",
-      "home_team": "Thunder",
-      "status": "Final",
-      "score": "103 - 116"
+      "away_team": "Cavaliers",
+      "home_team": "Bulls",
+      "status": "Half",
+      "score": "61 - 45",
+      "is_live": true
     },
     {
-      "away_team": "Mavericks",
-      "home_team": "Cavaliers",
-      "status": "Final",
-      "score": "130 - 120"
+      "away_team": "Magic",
+      "home_team": "Hornets",
+      "status": "Q4 6:50",
+      "score": "95 - 122",
+      "is_live": true
+    },
+    {
+      "away_team": "Clippers",
+      "home_team": "Pelicans",
+      "status": "Q3 8:19",
+      "score": "62 - 65",
+      "is_live": true
     },
     {
       "away_team": "Pistons",
-      "home_team": "Raptors",
+      "home_team": "Wizards",
       "status": "Final",
-      "score": "108 - 119"
+      "score": "117 - 95",
+      "is_live": true
     },
     {
-      "away_team": "Pacers",
-      "home_team": "Bucks",
-      "status": "Final",
-      "score": "123 - 134"
+      "away_team": "Lakers",
+      "home_team": "Heat",
+      "status": "Q3 8:39",
+      "score": "72 - 73",
+      "is_live": true
     },
     {
-      "away_team": "Trail Blazers",
-      "home_team": "76ers",
-      "status": "Final",
-      "score": "103 - 109"
+      "away_team": "76ers",
+      "home_team": "Kings",
+      "status": "10:00 pm ET",
+      "score": "N/A",
+      "is_live": false
+    }
+  ],
+  "injuries": [
+    {
+      "player": "J. SmithJalen Smith",
+      "position": "PF",
+      "injury": "Thu, Mar 19",
+      "status": "Calf"
+    },
+    {
+      "player": "I. OkoroIsaac Okoro",
+      "position": "SF",
+      "injury": "Thu, Mar 19",
+      "status": "Knee"
     }
   ]
 }
