@@ -1,76 +1,85 @@
 {
-  "date": "2026-03-19",
+  "date": "2026-03-20",
   "bulls_basic": {},
   "bulls_advanced": {},
   "calculated": {},
   "game_today": {
-    "opponent": "Raptors",
-    "home": true,
-    "status": "Final"
+    "away_team": "Cavaliers",
+    "home_team": "Bulls",
+    "status": "Half",
+    "score": "61 - 45",
+    "is_live": true
   },
-  "next_game": null,
+  "all_games_today": [
+    {
+      "away_team": "Suns",
+      "home_team": "Spurs",
+      "status": "Q3 6:59",
+      "score": "67 - 61",
+      "is_live": true
+    },
+    {
+      "away_team": "Bucks",
+      "home_team": "Jazz",
+      "status": "Q1 5:43",
+      "score": "10 - 15",
+      "is_live": true
+    },
+    {
+      "away_team": "Cavaliers",
+      "home_team": "Bulls",
+      "status": "Half",
+      "score": "61 - 45",
+      "is_live": true
+    },
+    {
+      "away_team": "Magic",
+      "home_team": "Hornets",
+      "status": "Q4 6:50",
+      "score": "95 - 122",
+      "is_live": true
+    },
+    {
+      "away_team": "Clippers",
+      "home_team": "Pelicans",
+      "status": "Q3 8:19",
+      "score": "62 - 65",
+      "is_live": true
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "Wizards",
+      "status": "Final",
+      "score": "117 - 95",
+      "is_live": true
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Heat",
+      "status": "Q3 8:39",
+      "score": "72 - 73",
+      "is_live": true
+    },
+    {
+      "away_team": "76ers",
+      "home_team": "Kings",
+      "status": "10:00 pm ET",
+      "score": "N/A",
+      "is_live": false
+    }
+  ],
   "injuries": [
+    {
+      "player": "J. SmithJalen Smith",
+      "position": "PF",
+      "injury": "Thu, Mar 19",
+      "status": "Calf"
+    },
     {
       "player": "I. OkoroIsaac Okoro",
       "position": "SF",
       "injury": "Thu, Mar 19",
       "status": "Knee"
-    }
-  ],
-  "all_games_today": [
-    {
-      "away_team": "Warriors",
-      "home_team": "Celtics",
-      "status": "Final",
-      "score": "99 - 120"
-    },
-    {
-      "away_team": "Thunder",
-      "home_team": "Nets",
-      "status": "Final",
-      "score": "121 - 92"
-    },
-    {
-      "away_team": "Trail Blazers",
-      "home_team": "Pacers",
-      "status": "Final",
-      "score": "127 - 119"
-    },
-    {
-      "away_team": "Raptors",
-      "home_team": "Bulls",
-      "status": "Final",
-      "score": "139 - 109"
-    },
-    {
-      "away_team": "Jazz",
-      "home_team": "Timberwolves",
-      "status": "Final",
-      "score": "111 - 147"
-    },
-    {
-      "away_team": "Clippers",
-      "home_team": "Pelicans",
-      "status": "Final",
-      "score": "109 - 124"
-    },
-    {
-      "away_team": "Nuggets",
-      "home_team": "Grizzlies",
-      "status": "Final",
-      "score": "118 - 125"
-    },
-    {
-      "away_team": "Hawks",
-      "home_team": "Mavericks",
-      "status": "Final",
-      "score": "135 - 120"
-    },
-    {
-      "away_team": "Lakers",
-      "home_team": "Rockets",
-      "status": "Final",
-      "score": "124 - 116"
     }
   ]
 }
