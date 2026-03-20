@@ -1,13 +1,13 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from nba_api.stats.endpoints import commonteamroster, leaguedashplayerstats, scoreboard, leaguegamefinder
+from nba_api.stats.endpoints import leaguedashteamstats, leaguegamefinder, commonteamroster, scoreboardv2
 from nba_api.stats.static import teams
 from datetime import datetime
 import json
 import time
 
-print("=== Bulls Daily Team Efficiency Update - Current Roster Only ===")
+print("=== Bulls Daily Team Efficiency Update - Current Roster & Live Scoreboard ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 bulls_id = 1610612741
@@ -25,7 +25,7 @@ all_games_today = []
 try:
     print("\nFetching current Bulls roster...")
     roster = commonteamroster.CommonTeamRoster(team_id=bulls_id, season=current_season)
-    roster_df = roster.get_data_frames()[0]  # Main roster table
+    roster_df = roster.get_data_frames()[0]
 
     current_players = roster_df['Player'].tolist()
     print(f"Current active Bulls players ({len(current_players)}): {', '.join(current_players[:8])}...")
@@ -37,6 +37,8 @@ except Exception as e:
 # 2. Season Averages - Only for current roster
 try:
     print("\nFetching season averages for current roster...")
+    time.sleep(1.5)
+
     player_stats = leaguedashplayerstats.LeagueDashPlayerStats(
         season=current_season,
         team_id_nullable=bulls_id,
@@ -47,17 +49,16 @@ try:
     current_stats = player_stats[player_stats['PLAYER_NAME'].isin(current_players)]
 
     if not current_stats.empty:
-        # Team totals (sum PPG, RPG, etc.)
         bulls_stats = {
-            "ppg": float(current_stats['PTS'].sum() / len(current_stats)),
-            "rpg": float(current_stats['REB'].sum() / len(current_stats)),
-            "apg": float(current_stats['AST'].sum() / len(current_stats)),
-            "tovpg": float(current_stats['TOV'].sum() / len(current_stats)),
+            "ppg": float(current_stats['PTS'].mean()),
+            "rpg": float(current_stats['REB'].mean()),
+            "apg": float(current_stats['AST'].mean()),
+            "tovpg": float(current_stats['TOV'].mean()),
             "fg_pct": float(current_stats['FG_PCT'].mean()),
             "fg3_pct": float(current_stats['FG3_PCT'].mean()),
             "ft_pct": float(current_stats['FT_PCT'].mean()),
-            "stlpg": float(current_stats['STL'].sum() / len(current_stats)),
-            "blkpg": float(current_stats['BLK'].sum() / len(current_stats)),
+            "stlpg": float(current_stats['STL'].mean()),
+            "blkpg": float(current_stats['BLK'].mean()),
             "player_count": len(current_stats)
         }
 
@@ -65,7 +66,7 @@ try:
         for k, v in bulls_stats.items():
             print(f"{k.upper()}: {v:.2f}")
 
-        # Calculated
+        # Calculated metrics
         poss = bulls_stats["ppg"] / (bulls_stats["fg_pct"] or 1)  # rough estimate
         calculated = {
             "efg_pct": bulls_stats["fg_pct"] + 0.5 * bulls_stats["fg3_pct"] if bulls_stats["fg3_pct"] else 0,
@@ -81,11 +82,16 @@ try:
 except Exception as e:
     print(f"Player stats error: {e}")
 
-# 3. LIVE SCOREBOARD (All Games Today)
+# 3. LIVE SCOREBOARD - All NBA games today
 try:
-    print("\nChecking live scoreboard...")
-    sb = scoreboard.ScoreBoard()
+    print("\nFetching live NBA scoreboard...")
+    time.sleep(1.5)
+
+    sb = scoreboardv2.ScoreBoardV2()
     games = sb.get_dict()['scoreboard']['games']
+
+    all_games_today = []
+    bulls_game = None
 
     for g in games:
         game_info = {
@@ -93,18 +99,21 @@ try:
             "home_team": g['homeTeam']['teamName'],
             "status": g['gameStatusText'],
             "score": f"{g['awayTeam']['score']} - {g['homeTeam']['score']}" if g['awayTeam']['score'] > 0 else "N/A",
-            "is_live": g['gameStatus'] in [2, 3]
+            "quarter": g.get('period', 0),
+            "time_remaining": g.get('gameClock', 'N/A'),
+            "is_live": g['gameStatus'] in [2, 3]  # 2 = live, 3 = halftime, etc.
         }
         all_games_today.append(game_info)
 
         if bulls_id == g['homeTeam']['teamId'] or bulls_id == g['awayTeam']['teamId']:
             today_game = game_info
+            print("  *** BULLS GAME TODAY! ***")
 
     print(f"{len(all_games_today)} NBA games today")
 except Exception as e:
     print(f"Scoreboard error: {e}")
 
-# 4. INJURY REPORT (CBS scrape)
+# 4. INJURY REPORT
 try:
     print("\nScraping Bulls injury report...")
     url = "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/injuries/"
@@ -143,5 +152,5 @@ data = {
 with open("bulls_team_efficiency.json", "w") as f:
     json.dump(data, f, indent=2)
 
-print("\nSaved: bulls_team_efficiency.json (current roster only)")
+print("\nSaved: bulls_team_efficiency.json")
 print("Script finished.")
