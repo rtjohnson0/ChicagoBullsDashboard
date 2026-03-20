@@ -1,31 +1,9 @@
 {
-  "date": "2026-03-19",
-  "bulls_basic": {
-    "pts": 115.9,
-    "reb": 45.0,
-    "ast": 28.7,
-    "tov": 15.2,
-    "fgm": 42.2,
-    "fga": 90.0,
-    "fg3m": 14.6,
-    "fg3a": 40.1,
-    "ftm": 16.9,
-    "fta": 21.6
-  },
-  "bulls_advanced": {
-    "off_rating": 112.4,
-    "def_rating": 116.9,
-    "net_rating": -4.5,
-    "ts_pct": 0.582,
-    "pace": 102.53
-  },
-  "game_today": true,
-  "next_game": {
-    "date": null,
-    "opponent": null,
-    "is_home": null,
-    "time": "TBD"
-  },
+  "date": "2026-03-20",
+  "bulls_stats": {},
+  "calculated": {},
+  "game_today": null,
+  "all_games_today": [],
   "injuries": [
     {
       "player": "J. SmithJalen Smith",
