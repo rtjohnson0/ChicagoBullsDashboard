@@ -21,31 +21,15 @@
       "position": "SF",
       "injury": "Thu, Mar 19",
       "status": "Knee"
+    },
+    {
+      "player": "J. IveyJaden Ivey",
+      "position": "SG",
+      "injury": "Thu, Mar 19",
+      "status": "Knee"
     }
   ],
   "all_games_today": [
-    {
-      "away_team": "Bucks",
-      "home_team": "Jazz",
-      "away_score": 77,
-      "home_score": 97,
-      "status": "Q4 10:48",
-      "quarter": 4,
-      "time_remaining": "PT10M48.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "76ers",
-      "home_team": "Kings",
-      "away_score": 51,
-      "home_score": 52,
-      "status": "Q2 5:22",
-      "quarter": 2,
-      "time_remaining": "PT05M22.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Magic",
       "home_team": "Hornets",
@@ -106,6 +90,28 @@
       "home_team": "Spurs",
       "away_score": 100,
       "home_score": 101,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bucks",
+      "home_team": "Jazz",
+      "away_score": 96,
+      "home_score": 128,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "76ers",
+      "home_team": "Kings",
+      "away_score": 139,
+      "home_score": 118,
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
