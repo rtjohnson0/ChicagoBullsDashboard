@@ -12,9 +12,10 @@ print("=== Bulls Daily Team Efficiency Update ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 bulls_id = 1610612741
-current_season = '2025-26'  # Try '2025' if empty
 
-# Initialize variables
+# Try multiple seasons
+seasons = ['2025-26', '2025']
+
 bulls_basic = {}
 bulls_advanced = {}
 calculated = {}
@@ -23,62 +24,88 @@ next_game = None
 injuries = []
 all_games_today = []
 
-# 1. TEAM STATS
-try:
-    print("\nFetching team stats...")
-    time.sleep(1)  # small delay to avoid rate limit
+# 1. TEAM STATS - Try multiple seasons
+stats_found = False
+for season in seasons:
+    if stats_found:
+        break
+    print(f"\nTrying season: {season}")
+    try:
+        time.sleep(1.5)  # Avoid rate limit
 
-    basic = leaguedashteamstats.LeagueDashTeamStats(
-        season=current_season,
-        measure_type_detailed_defense='Base',
-        per_mode_detailed='PerGame'
-    ).get_data_frames()[0]
+        basic = leaguedashteamstats.LeagueDashTeamStats(
+            season=season,
+            measure_type_detailed_defense='Base',
+            per_mode_detailed='PerGame'
+        ).get_data_frames()[0]
 
-    time.sleep(1)
+        time.sleep(1.5)
 
-    adv = leaguedashteamstats.LeagueDashTeamStats(
-        season=current_season,
-        measure_type_detailed_defense='Advanced',
-        per_mode_detailed='PerGame'
-    ).get_data_frames()[0]
+        adv = leaguedashteamstats.LeagueDashTeamStats(
+            season=season,
+            measure_type_detailed_defense='Advanced',
+            per_mode_detailed='PerGame'
+        ).get_data_frames()[0]
 
-    # Safe column selection
-    basic_cols = ['TEAM_ID', 'PTS', 'REB', 'AST', 'TOV', 'FGM', 'FGA', 'FG3M', 'FG3A', 'FTM', 'FTA']
-    basic_cols = [c for c in basic_cols if c in basic.columns]
+        print(f"Basic columns: {basic.columns.tolist()}")
+        print(f"Advanced columns: {adv.columns.tolist()}")
 
-    adv_cols = ['TEAM_ID', 'OFF_RATING', 'DEF_RATING', 'NET_RATING', 'TS_PCT', 'PACE', 'PIE']
-    adv_cols = [c for c in adv_cols if c in adv.columns]
+        team_data = pd.merge(
+            basic[['TEAM_ID', 'PTS', 'REB', 'AST', 'TOV', 'FGM', 'FGA', 'FG3M', 'FG3A', 'FTM', 'FTA']],
+            adv[['TEAM_ID', 'OFF_RATING', 'DEF_RATING', 'NET_RATING', 'TS_PCT', 'PACE', 'PIE']],
+            on='TEAM_ID',
+            how='left'
+        )
 
-    team_data = pd.merge(
-        basic[basic_cols],
-        adv[adv_cols],
-        on='TEAM_ID',
-        how='left'
-    )
+        bulls_row = team_data[team_data['TEAM_ID'] == bulls_id]
+        print(f"Bulls rows found: {len(bulls_row)}")
 
-    bulls_row = team_data[team_data['TEAM_ID'] == bulls_id]
-    if not bulls_row.empty:
-        bulls = bulls_row.iloc[0]
+        if not bulls_row.empty:
+            bulls = bulls_row.iloc[0]
 
-        bulls_basic = {col.lower(): float(bulls[col]) for col in basic_cols if col != 'TEAM_ID'}
-        bulls_advanced = {col.lower(): float(bulls[col]) for col in adv_cols if col != 'TEAM_ID'}
+            bulls_basic = {
+                "pts": float(bulls['PTS']),
+                "reb": float(bulls['REB']),
+                "ast": float(bulls['AST']),
+                "tov": float(bulls['TOV']),
+                "fgm": float(bulls['FGM']),
+                "fga": float(bulls['FGA']),
+                "fg3m": float(bulls['FG3M']),
+                "fg3a": float(bulls['FG3A']),
+                "ftm": float(bulls['FTM']),
+                "fta": float(bulls['FTA'])
+            }
 
-        # Possessions estimate
-        poss = (bulls.get('FGA', 0) + 0.44 * bulls.get('FTA', 0) + bulls.get('TOV', 0) - bulls.get('OREB', 0))
-        poss = max(poss, 1)
+            bulls_advanced = {
+                "off_rating": float(bulls['OFF_RATING']),
+                "def_rating": float(bulls['DEF_RATING']),
+                "net_rating": float(bulls['NET_RATING']),
+                "ts_pct": float(bulls['TS_PCT']),
+                "pace": float(bulls['PACE']),
+                "pie": float(bulls.get('PIE', 0.0))
+            }
 
-        calculated = {
-            "efg_pct": (bulls.get('FGM', 0) + 0.5 * bulls.get('FG3M', 0)) / bulls.get('FGA', 1),
-            "ts_pct_calc": bulls.get('PTS', 0) / (2 * (bulls.get('FGA', 0) + 0.44 * bulls.get('FTA', 0))) if (bulls.get('FGA', 0) + bulls.get('FTA', 0) > 0) else 0,
-            "tov_pct": bulls.get('TOV', 0) / poss,
-            "orb_pct": bulls.get('OREB', 0) / (bulls.get('OREB', 0) + bulls.get('OPP_DREB', 0)) if (bulls.get('OREB', 0) + bulls.get('OPP_DREB', 0) > 0) else 0
-        }
+            # Calculated
+            poss = (bulls['FGA'] + 0.44 * bulls['FTA'] + bulls['TOV'] - bulls.get('OREB', 0))
+            poss = max(1, poss)
 
-        print("Bulls stats pulled successfully")
-    else:
-        print("No Bulls data returned from NBA API")
-except Exception as e:
-    print(f"Stats error: {e}")
+            calculated = {
+                "offensive_rating": (bulls['PTS'] / poss) * 100,
+                "defensive_rating": bulls['DEF_RATING'],
+                "net_rating": bulls['NET_RATING'],
+                "pace": bulls['PACE'],
+                "efg_pct": (bulls['FGM'] + 0.5 * bulls['FG3M']) / bulls['FGA'] if bulls['FGA'] > 0 else 0,
+                "ts_pct_calc": bulls['PTS'] / (2 * (bulls['FGA'] + 0.44 * bulls['FTA'])) if (bulls['FGA'] + bulls['FTA'] > 0) else 0,
+                "tov_pct": bulls['TOV'] / poss if poss > 0 else 0,
+                "orb_pct": bulls.get('OREB', 0) / (bulls.get('OREB', 0) + bulls.get('OPP_DREB', 0)) if (bulls.get('OREB', 0) + bulls.get('OPP_DREB', 0) > 0) else 0
+            }
+
+            stats_found = True
+            print(f"Stats pulled successfully for season {season}")
+        else:
+            print(f"No Bulls row for season {season}")
+    except Exception as e:
+        print(f"Stats error for {season}: {e}")
 
 # 2. LIVE SCOREBOARD (All Games Today)
 try:
