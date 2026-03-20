@@ -1,73 +1,31 @@
 {
-  "date": "2026-03-20",
-  "bulls_basic": {},
-  "bulls_advanced": {},
-  "calculated": {},
-  "game_today": {
-    "away_team": "Cavaliers",
-    "home_team": "Bulls",
-    "status": "Q3 8:05",
-    "score": "71 - 50",
-    "is_live": true
+  "date": "2026-03-19",
+  "bulls_basic": {
+    "pts": 115.9,
+    "reb": 45.0,
+    "ast": 28.7,
+    "tov": 15.2,
+    "fgm": 42.2,
+    "fga": 90.0,
+    "fg3m": 14.6,
+    "fg3a": 40.1,
+    "ftm": 16.9,
+    "fta": 21.6
   },
-  "all_games_today": [
-    {
-      "away_team": "Suns",
-      "home_team": "Spurs",
-      "status": "Q3 4:57",
-      "score": "70 - 66",
-      "is_live": true
-    },
-    {
-      "away_team": "Bucks",
-      "home_team": "Jazz",
-      "status": "Q1 2:48",
-      "score": "14 - 25",
-      "is_live": true
-    },
-    {
-      "away_team": "Cavaliers",
-      "home_team": "Bulls",
-      "status": "Q3 8:05",
-      "score": "71 - 50",
-      "is_live": true
-    },
-    {
-      "away_team": "Magic",
-      "home_team": "Hornets",
-      "status": "Q4 3:43",
-      "score": "104 - 125",
-      "is_live": true
-    },
-    {
-      "away_team": "Clippers",
-      "home_team": "Pelicans",
-      "status": "Q3 5:40",
-      "score": "68 - 69",
-      "is_live": true
-    },
-    {
-      "away_team": "Pistons",
-      "home_team": "Wizards",
-      "status": "Final",
-      "score": "117 - 95",
-      "is_live": true
-    },
-    {
-      "away_team": "Lakers",
-      "home_team": "Heat",
-      "status": "Q3 6:07",
-      "score": "84 - 77",
-      "is_live": true
-    },
-    {
-      "away_team": "76ers",
-      "home_team": "Kings",
-      "status": "10:00 pm ET",
-      "score": "N/A",
-      "is_live": false
-    }
-  ],
+  "bulls_advanced": {
+    "off_rating": 112.4,
+    "def_rating": 116.9,
+    "net_rating": -4.5,
+    "ts_pct": 0.582,
+    "pace": 102.53
+  },
+  "game_today": true,
+  "next_game": {
+    "date": null,
+    "opponent": null,
+    "is_home": null,
+    "time": "TBD"
+  },
   "injuries": [
     {
       "player": "J. SmithJalen Smith",
@@ -80,6 +38,96 @@
       "position": "SF",
       "injury": "Thu, Mar 19",
       "status": "Knee"
+    }
+  ],
+  "all_games_today": [
+    {
+      "away_team": "Bucks",
+      "home_team": "Jazz",
+      "away_score": 64,
+      "home_score": 82,
+      "status": "Q3 4:42",
+      "quarter": 3,
+      "time_remaining": "PT04M42.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "76ers",
+      "home_team": "Kings",
+      "away_score": 47,
+      "home_score": 41,
+      "status": "Q2 8:59",
+      "quarter": 2,
+      "time_remaining": "PT08M59.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Magic",
+      "home_team": "Hornets",
+      "away_score": 111,
+      "home_score": 130,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "Wizards",
+      "away_score": 117,
+      "home_score": 95,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Heat",
+      "away_score": 134,
+      "home_score": 126,
+      "status": "Final               ",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Cavaliers",
+      "home_team": "Bulls",
+      "away_score": 115,
+      "home_score": 110,
+      "status": "Final               ",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Clippers",
+      "home_team": "Pelicans",
+      "away_score": 99,
+      "home_score": 105,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Suns",
+      "home_team": "Spurs",
+      "away_score": 100,
+      "home_score": 101,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
     }
   ]
 }

@@ -159,6 +159,62 @@ body {
   border: 0;
 }
 
+/* ... your existing styles ... */
+
+.refresh-btn {
+  background: #CE1141;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #ff3366;
+  transform: scale(1.05);
+}
+
+.update-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.games-ticker h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.game-card {
+  text-align: center;
+}
+
+.game-card.live-pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { border-color: rgba(206, 17, 65, 0.3); }
+  50% { border-color: rgba(206, 17, 65, 0.8); }
+}
+
+.live-info {
+  color: #ff3366;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
 /* Responsive adjustments */
 @media (max-width: 640px) {
   .stats-grid {
@@ -168,3 +224,4 @@ body {
     @apply p-5;
   }
 }
+
