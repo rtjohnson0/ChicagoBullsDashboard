@@ -1,9 +1,14 @@
 {
   "date": "2026-03-20",
-  "bulls_stats": {},
-  "calculated": {},
-  "game_today": null,
-  "all_games_today": [],
+  "bulls_basic": {},
+  "bulls_advanced": {},
+  "game_today": true,
+  "next_game": {
+    "date": null,
+    "opponent": null,
+    "is_home": null,
+    "time": "TBD"
+  },
   "injuries": [
     {
       "player": "J. SmithJalen Smith",
@@ -22,22 +27,22 @@
     {
       "away_team": "Bucks",
       "home_team": "Jazz",
-      "away_score": 64,
-      "home_score": 82,
-      "status": "Q3 4:42",
-      "quarter": 3,
-      "time_remaining": "PT04M42.00S",
+      "away_score": 77,
+      "home_score": 97,
+      "status": "Q4 10:48",
+      "quarter": 4,
+      "time_remaining": "PT10M48.00S",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "76ers",
       "home_team": "Kings",
-      "away_score": 47,
-      "home_score": 41,
-      "status": "Q2 8:59",
+      "away_score": 51,
+      "home_score": 52,
+      "status": "Q2 5:22",
       "quarter": 2,
-      "time_remaining": "PT08M59.00S",
+      "time_remaining": "PT05M22.00S",
       "is_live": true,
       "is_completed": false
     },
@@ -68,7 +73,7 @@
       "home_team": "Heat",
       "away_score": 134,
       "home_score": 126,
-      "status": "Final               ",
+      "status": "Final",
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
@@ -79,7 +84,7 @@
       "home_team": "Bulls",
       "away_score": 115,
       "home_score": 110,
-      "status": "Final               ",
+      "status": "Final",
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
