@@ -1,14 +1,14 @@
 {
-  "date": "2026-03-21 22:11",
+  "date": "2026-03-21 22:44",
   "all_games_today": [
     {
       "away_team": "Thunder",
       "home_team": "Wizards",
-      "away_score": 68,
-      "home_score": 63,
-      "status": "Q2 :27.0",
-      "quarter": 2,
-      "time_remaining": "PT00M27.00S",
+      "away_score": 77,
+      "home_score": 75,
+      "status": "Q3 8:09",
+      "quarter": 3,
+      "time_remaining": "PT08M09.00S",
       "is_live": true,
       "is_completed": false
     },
