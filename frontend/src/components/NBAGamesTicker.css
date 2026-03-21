@@ -1,0 +1,114 @@
+.games-section {
+  padding: 2rem;
+  background: rgba(20, 20, 35, 0.8);
+  border-radius: 16px;
+  border: 1px solid rgba(206, 17, 65, 0.2);
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.update-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.game-card {
+  background: linear-gradient(135deg, rgba(40, 40, 60, 0.9), rgba(20, 20, 35, 0.9));
+  border-radius: 12px;
+  padding: 1.4rem;
+  text-align: center;
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(206, 17, 65, 0.25);
+  border-color: rgba(206, 17, 65, 0.5);
+}
+
+.matchup {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.score {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0.5rem 0;
+}
+
+.live-info {
+  color: #ff3366;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.live-pulse {
+  animation: pulse 2s infinite;
+  border-color: rgba(206, 17, 65, 0.6);
+}
+
+.completed {
+  opacity: 0.85;
+  background: rgba(40, 40, 60, 0.7);
+}
+
+.completed-info {
+  color: #aaa;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+.no-games {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  padding: 2rem;
+}
+
+.refresh-btn {
+  background: #CE1141;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #ff3366;
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0%, 100% { border-color: rgba(206, 17, 65, 0.4); }
+  50% { border-color: rgba(206, 17, 65, 0.8); }
+}
