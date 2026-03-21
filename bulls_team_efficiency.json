@@ -1,8 +1,8 @@
 {
-  "date": "2026-03-20",
+  "date": "2026-03-21",
   "bulls_basic": {},
   "bulls_advanced": {},
-  "game_today": true,
+  "game_today": false,
   "next_game": {
     "date": null,
     "opponent": null,
@@ -31,10 +31,10 @@
   ],
   "all_games_today": [
     {
-      "away_team": "Magic",
-      "home_team": "Hornets",
-      "away_score": 111,
-      "home_score": 130,
+      "away_team": "Knicks",
+      "home_team": "Nets",
+      "away_score": 93,
+      "home_score": 92,
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
@@ -42,10 +42,32 @@
       "is_completed": false
     },
     {
-      "away_team": "Pistons",
-      "home_team": "Wizards",
+      "away_team": "Warriors",
+      "home_team": "Pistons",
+      "away_score": 101,
+      "home_score": 115,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Hawks",
+      "home_team": "Rockets",
+      "away_score": 95,
+      "home_score": 117,
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Celtics",
+      "home_team": "Grizzlies",
       "away_score": 117,
-      "home_score": 95,
+      "home_score": 112,
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
@@ -53,10 +75,10 @@
       "is_completed": false
     },
     {
-      "away_team": "Lakers",
-      "home_team": "Heat",
-      "away_score": 134,
-      "home_score": 126,
+      "away_team": "Trail Blazers",
+      "home_team": "Timberwolves",
+      "away_score": 108,
+      "home_score": 104,
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
@@ -64,54 +86,10 @@
       "is_completed": false
     },
     {
-      "away_team": "Cavaliers",
-      "home_team": "Bulls",
+      "away_team": "Raptors",
+      "home_team": "Nuggets",
       "away_score": 115,
-      "home_score": 110,
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Clippers",
-      "home_team": "Pelicans",
-      "away_score": 99,
-      "home_score": 105,
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Suns",
-      "home_team": "Spurs",
-      "away_score": 100,
-      "home_score": 101,
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Bucks",
-      "home_team": "Jazz",
-      "away_score": 96,
-      "home_score": 128,
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "76ers",
-      "home_team": "Kings",
-      "away_score": 139,
-      "home_score": 118,
+      "home_score": 121,
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
