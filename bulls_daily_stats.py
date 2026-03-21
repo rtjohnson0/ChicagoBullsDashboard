@@ -10,70 +10,97 @@ print("=== Bulls Daily Stats Update ===")
 print(f"Run time: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
 bulls_id = 1610612741
-current_season = '2025-26'
+current_season = '2025-26'  # Moved here so it's global
 
 bulls_basic = {}
 bulls_advanced = {}
 next_game = {"date": None, "opponent": None, "is_home": None, "time": "TBD"}
 injuries = []
 
-# 1. Basic & Advanced Team Stats
-try:
-    print("\nFetching Bulls season stats...")
-    time.sleep(1.5)
+# Try current season first, fallback if empty
+seasons_to_try = [current_season, '2025']
 
-    basic = leaguedashteamstats.LeagueDashTeamStats(
-        season=current_season,
-        measure_type_detailed_defense='Base',
-        per_mode_detailed='PerGame'
-    ).get_data_frames()[0]
+stats_found = False
 
-    time.sleep(1.5)
+for season in seasons_to_try:
+    if stats_found:
+        break
 
-    adv = leaguedashteamstats.LeagueDashTeamStats(
-        season=current_season,
-        measure_type_detailed_defense='Advanced',
-        per_mode_detailed='PerGame'
-    ).get_data_frames()[0]
+    print(f"\nTrying season: {season}")
 
-    bulls_row = basic[basic['TEAM_ID'] == bulls_id]
-    if not bulls_row.empty:
-        b = bulls_row.iloc[0]
-        bulls_basic = {
-            "pts": float(b['PTS']),
-            "reb": float(b['REB']),
-            "ast": float(b['AST']),
-            "tov": float(b['TOV']),
-            "fgm": float(b['FGM']),
-            "fga": float(b['FGA']),
-            "fg3m": float(b['FG3M']),
-            "fg3a": float(b['FG3A']),
-            "ftm": float(b['FTM']),
-            "fta": float(b['FTA'])
-        }
+    try:
+        time.sleep(1.5)
 
-        a = adv[adv['TEAM_ID'] == bulls_id]
-        if not a.empty:
-            a = a.iloc[0]
-            bulls_advanced = {
-                "off_rating": float(a['OFF_RATING']),
-                "def_rating": float(a['DEF_RATING']),
-                "net_rating": float(a['NET_RATING']),
-                "ts_pct": float(a['TS_PCT']),
-                "pace": float(a['PACE'])
-            }
+        basic = leaguedashteamstats.LeagueDashTeamStats(
+            season=season,
+            measure_type_detailed_defense='Base',
+            per_mode_detailed='PerGame'
+        ).get_data_frames()[0]
 
-        print("\nBulls Season Stats:")
-        for k, v in bulls_basic.items():
-            print(f"{k.upper()}: {v:.1f}")
-        for k, v in bulls_advanced.items():
-            print(f"{k.replace('_', ' ').title()}: {v:.2f}")
-    else:
-        print("No Bulls data found")
-except Exception as e:
-    print(f"Stats error: {e}")
+        print(f"Basic stats rows: {len(basic)}")
+        if 'TEAM_ID' in basic.columns:
+            print("TEAM_ID column exists in basic")
 
-# 2. Next Game
+        time.sleep(1.5)
+
+        adv = leaguedashteamstats.LeagueDashTeamStats(
+            season=season,
+            measure_type_detailed_defense='Advanced',
+            per_mode_detailed='PerGame'
+        ).get_data_frames()[0]
+
+        print(f"Advanced stats rows: {len(adv)}")
+
+        if len(basic) > 0 and len(adv) > 0:
+            team_data = pd.merge(
+                basic[['TEAM_ID', 'PTS', 'REB', 'AST', 'TOV', 'FGM', 'FGA', 'FG3M', 'FG3A', 'FTM', 'FTA']],
+                adv[['TEAM_ID', 'OFF_RATING', 'DEF_RATING', 'NET_RATING', 'TS_PCT', 'PACE']],
+                on='TEAM_ID',
+                how='left'
+            )
+
+            bulls_row = team_data[team_data['TEAM_ID'] == bulls_id]
+            print(f"Bulls rows found for {season}: {len(bulls_row)}")
+
+            if not bulls_row.empty:
+                b = bulls_row.iloc[0]
+
+                bulls_basic = {
+                    "pts": float(b.get('PTS', 0)),
+                    "reb": float(b.get('REB', 0)),
+                    "ast": float(b.get('AST', 0)),
+                    "tov": float(b.get('TOV', 0)),
+                    "fgm": float(b.get('FGM', 0)),
+                    "fga": float(b.get('FGA', 0)),
+                    "fg3m": float(b.get('FG3M', 0)),
+                    "fg3a": float(b.get('FG3A', 0)),
+                    "ftm": float(b.get('FTM', 0)),
+                    "fta": float(b.get('FTA', 0))
+                }
+
+                bulls_advanced = {
+                    "off_rating": float(b.get('OFF_RATING', None)),
+                    "def_rating": float(b.get('DEF_RATING', None)),
+                    "net_rating": float(b.get('NET_RATING', None)),
+                    "ts_pct": float(b.get('TS_PCT', None)),
+                    "pace": float(b.get('PACE', None))
+                }
+
+                print("\nBulls Season Stats:")
+                for k, v in bulls_basic.items():
+                    print(f"{k.upper()}: {v:.1f}")
+                for k, v in bulls_advanced.items():
+                    print(f"{k.replace('_', ' ').title()}: {v}")
+
+                stats_found = True
+            else:
+                print(f"No Bulls row found for season {season}")
+        else:
+            print(f"No data returned for season {season}")
+    except Exception as e:
+        print(f"Stats error for {season}: {e}")
+
+# Next Game (fixed: current_season is now defined)
 try:
     print("\nFetching next game...")
     games = leaguegamefinder.LeagueGameFinder(team_id_nullable=bulls_id, season_nullable=current_season).get_data_frames()[0]
@@ -91,14 +118,16 @@ try:
             "time": "TBD"
         }
         print(f"Next game: {next_game['date']} vs {next_game['opponent']} ({'Home' if is_home else 'Away'})")
+    else:
+        print("\nNo upcoming games found")
 except Exception as e:
     print(f"Next game error: {e}")
 
-# 3. Injury Report
+# Injury Report
 try:
     print("\nScraping Bulls injury report...")
     url = "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/injuries/"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -123,35 +152,34 @@ except Exception as e:
     print(f"Injury scrape error: {e}")
     injuries = []
 
-# 4. Prepare data for JSON (this is what the frontend will read)
+# Save to JSON
 data = {
     "date": datetime.now().strftime('%Y-%m-%d'),
     "bulls_season_stats": {
-        "ppg": bulls_basic.get("pts", None),
-        "rpg": bulls_basic.get("reb", None),
-        "apg": bulls_basic.get("ast", None),
-        "tovpg": bulls_basic.get("tov", None),
-        "fgm": bulls_basic.get("fgm", None),
-        "fga": bulls_basic.get("fga", None),
-        "fg3m": bulls_basic.get("fg3m", None),
-        "fg3a": bulls_basic.get("fg3a", None),
-        "ftm": bulls_basic.get("ftm", None),
-        "fta": bulls_basic.get("fta", None),
-        "off_rating": bulls_advanced.get("off_rating", None),
-        "def_rating": bulls_advanced.get("def_rating", None),
-        "net_rating": bulls_advanced.get("net_rating", None),
-        "ts_pct": bulls_advanced.get("ts_pct", None),
-        "pace": bulls_advanced.get("pace", None)
+        "ppg": bulls_basic.get("pts"),
+        "rpg": bulls_basic.get("reb"),
+        "apg": bulls_basic.get("ast"),
+        "tovpg": bulls_basic.get("tov"),
+        "fgm": bulls_basic.get("fgm"),
+        "fga": bulls_basic.get("fga"),
+        "fg3m": bulls_basic.get("fg3m"),
+        "fg3a": bulls_basic.get("fg3a"),
+        "ftm": bulls_basic.get("ftm"),
+        "fta": bulls_basic.get("fta"),
+        "off_rating": bulls_advanced.get("off_rating"),
+        "def_rating": bulls_advanced.get("def_rating"),
+        "net_rating": bulls_advanced.get("net_rating"),
+        "ts_pct": bulls_advanced.get("ts_pct"),
+        "pace": bulls_advanced.get("pace")
     },
     "next_game": next_game,
     "injuries": injuries
 }
 
-# Save to file
 with open('bulls_daily.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 print("\nSaved: bulls_daily.json")
 print("JSON content preview:")
-print(json.dumps(data, indent=2))  # ← This prints the full JSON to terminal so you can verify
+print(json.dumps(data, indent=2))
 print("Script finished.")
