@@ -1,0 +1,115 @@
+{
+  "date": "2026-03-21 16:54",
+  "all_games_today": [
+    {
+      "away_team": "Thunder",
+      "home_team": "Wizards",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "5:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Grizzlies",
+      "home_team": "Hornets",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "7:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Magic",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "7:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Cavaliers",
+      "home_team": "Pelicans",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "7:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Hawks",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "8:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Heat",
+      "home_team": "Rockets",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "8:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pacers",
+      "home_team": "Spurs",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "8:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Clippers",
+      "home_team": "Mavericks",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "76ers",
+      "home_team": "Jazz",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "9:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bucks",
+      "home_team": "Suns",
+      "away_score": 0,
+      "home_score": 0,
+      "status": "10:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    }
+  ]
+}

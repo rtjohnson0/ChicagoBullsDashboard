@@ -2,7 +2,7 @@ name: Daily Bulls Efficiency Update
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # 9 AM ET (14:00 UTC)
+    - cron: '*/20 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
           pip install pandas nba_api requests beautifulsoup4
 
       - name: Run daily script
-        run: python bulls_daily_update.py
+        run: python nba_live_scoreboard.py
 
       - name: Commit and push updated JSON
         run: |
