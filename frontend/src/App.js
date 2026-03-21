@@ -26,16 +26,22 @@ function App() {
       setBullsData(bullsRes.data);
       setScoreboardData(scoreboardRes.data);
       setLastUpdated(new Date());
-      console.log('Data refreshed successfully');
+      console.log('Data refreshed successfully:', {
+        bulls: bullsRes.data,
+        scoreboard: scoreboardRes.data
+      });
     } catch (err) {
-      setError('Failed to load data. Check console or try again.');
+      const errMsg = err.response?.status === 404
+        ? 'JSON file not found on GitHub. Check if the file exists and repo is public.'
+        : 'Failed to load data: ' + err.message;
+      setError(errMsg);
       console.error('Fetch error:', err);
     } finally {
       setLoading(false);
     }
   };
 
-  // Initial load + auto-refresh every 60 seconds
+  // Initial fetch + auto-refresh every 60 seconds
   useEffect(() => {
     fetchAll();
     const interval = setInterval(fetchAll, 60000);
@@ -59,7 +65,7 @@ function App() {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 to-black">
         <div className="text-xl text-red-400 bg-gray-900/80 p-8 rounded-2xl text-center max-w-md">
           {error}
-          <button 
+          <button
             onClick={handleRefresh}
             className="mt-6 px-6 py-3 bg-bullsRed text-white rounded-lg hover:bg-red-600 transition"
           >
@@ -86,7 +92,7 @@ function App() {
           </div>
         </header>
 
-        {/* Win Probability (placeholder calc - update with real logic later) */}
+        {/* Win Probability */}
         <section className="win-prob-section">
           <h2>Next Game Win Probability</h2>
           <div className="gauge-container">
@@ -138,8 +144,8 @@ function App() {
             <h2>Today's NBA Games</h2>
             <div className="games-grid">
               {scoreboardData.all_games_today.map((game, i) => (
-                <div 
-                  key={i} 
+                <div
+                  key={i}
                   className={`game-card glass-card ${game.is_live ? 'live-pulse' : game.is_completed ? 'completed' : ''}`}
                 >
                   <p className="matchup">

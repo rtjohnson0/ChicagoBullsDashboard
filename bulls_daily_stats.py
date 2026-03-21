@@ -123,17 +123,35 @@ except Exception as e:
     print(f"Injury scrape error: {e}")
     injuries = []
 
-# 4. Save
+# 4. Prepare data for JSON (this is what the frontend will read)
 data = {
     "date": datetime.now().strftime('%Y-%m-%d'),
-    "bulls_basic": bulls_basic,
-    "bulls_advanced": bulls_advanced,
+    "bulls_season_stats": {
+        "ppg": bulls_basic.get("pts", None),
+        "rpg": bulls_basic.get("reb", None),
+        "apg": bulls_basic.get("ast", None),
+        "tovpg": bulls_basic.get("tov", None),
+        "fgm": bulls_basic.get("fgm", None),
+        "fga": bulls_basic.get("fga", None),
+        "fg3m": bulls_basic.get("fg3m", None),
+        "fg3a": bulls_basic.get("fg3a", None),
+        "ftm": bulls_basic.get("ftm", None),
+        "fta": bulls_basic.get("fta", None),
+        "off_rating": bulls_advanced.get("off_rating", None),
+        "def_rating": bulls_advanced.get("def_rating", None),
+        "net_rating": bulls_advanced.get("net_rating", None),
+        "ts_pct": bulls_advanced.get("ts_pct", None),
+        "pace": bulls_advanced.get("pace", None)
+    },
     "next_game": next_game,
     "injuries": injuries
 }
 
+# Save to file
 with open('bulls_daily.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 print("\nSaved: bulls_daily.json")
+print("JSON content preview:")
+print(json.dumps(data, indent=2))  # ← This prints the full JSON to terminal so you can verify
 print("Script finished.")
