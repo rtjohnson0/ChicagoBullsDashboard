@@ -1,24 +1,7 @@
 {
   "date": "2026-03-21",
-  "bulls_basic": {
-    "pts": 115.8,
-    "reb": 45.0,
-    "ast": 28.7,
-    "tov": 15.2,
-    "fgm": 42.2,
-    "fga": 90.1,
-    "fg3m": 14.6,
-    "fg3a": 40.2,
-    "ftm": 16.8,
-    "fta": 21.5
-  },
-  "bulls_advanced": {
-    "off_rating": 112.3,
-    "def_rating": 116.8,
-    "net_rating": -4.5,
-    "ts_pct": 0.581,
-    "pace": 102.53
-  },
+  "bulls_basic": {},
+  "bulls_advanced": {},
   "next_game": {
     "date": null,
     "opponent": null,
