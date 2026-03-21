@@ -23,11 +23,19 @@ jobs:
       - run: |
             git config --global user.name "GitHub Action Bot"
             git config --global user.email "action@github.com"
-    
-            # Pull remote changes first (merge or rebase)
-            git pull origin main --rebase || true  # ignore if no changes
-    
+
+            # Stash any uncommitted changes from script run
+            git stash push --include-untracked || true
+
+            # Pull remote changes (rebase to keep history clean)
+            git pull origin main --rebase || true
+
+            # Apply stashed changes (if any)
+            git stash pop || true
+
+            # Stage and commit the updated JSON
             git add bulls_daily.json
             git commit -m "Daily Bulls stats update: $(date +'%Y-%m-%d %H:%M')" || echo "No changes to commit"
-    
-             git push origin HEAD:main
+
+            # Force push if needed (only if rebase succeeded)
+            git push origin HEAD:main || git push --force-with-lease origin HEAD:main
