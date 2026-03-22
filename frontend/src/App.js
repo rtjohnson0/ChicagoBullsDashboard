@@ -2,6 +2,7 @@
 import React from 'react';
 import BullsStats from './components/BullsStats';
 import NBAGamesTicker from './components/NBAGamesTicker';
+import WinProbability from './components/WinProbability';
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="app-wrapper">
       <BullsStats />
       <NBAGamesTicker />
+     <WinProbability />
     </div>
   );
 }

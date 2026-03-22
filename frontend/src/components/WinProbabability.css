@@ -1,0 +1,58 @@
+.win-prob-section {
+  padding: 1.5rem;
+  background: rgba(30, 30, 46, 0.7);
+  border-radius: 16px;
+  border: 1px solid rgba(206, 17, 65, 0.2);
+  text-align: center;
+  margin: 1rem 0;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.gauge-container {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1rem;
+}
+
+.explanation {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  margin: 0.5rem 0;
+}
+
+.next-opponent {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-top: 0.8rem;
+}
+
+.refresh-btn {
+  background: #CE1141;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #ff3366;
+  transform: scale(1.05);
+}

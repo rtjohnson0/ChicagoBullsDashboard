@@ -102,10 +102,11 @@ for season in seasons_to_try:
 
 # Next Game (fixed: current_season is now defined)
 try:
-    print("\nFetching next game...")
+    print("\nFetching next game and win probability...")
     games = leaguegamefinder.LeagueGameFinder(team_id_nullable=bulls_id, season_nullable=current_season).get_data_frames()[0]
     games['GAME_DATE'] = pd.to_datetime(games['GAME_DATE'])
-    upcoming = games[games['GAME_DATE'] > datetime.now()].sort_values('GAME_DATE')
+    upcoming = games[games['GAME_DATE'] > datetime.now() - timedelta(days=1)].sort_values('GAME_DATE')
+
     if not upcoming.empty:
         next_g = upcoming.iloc[0]
         next_opp_abbr = next_g['MATCHUP'].split(' @ ')[-1] if '@' in next_g['MATCHUP'] else next_g['MATCHUP'].split(' vs. ')[-1]
@@ -117,12 +118,36 @@ try:
             "is_home": is_home,
             "time": "TBD"
         }
-        print(f"Next game: {next_game['date']} vs {next_game['opponent']} ({'Home' if is_home else 'Away'})")
-    else:
-        print("\nNo upcoming games found")
-except Exception as e:
-    print(f"Next game error: {e}")
 
+        # Get opponent net rating
+        opp_team = teams.find_team_by_abbreviation(next_opp_abbr)
+        opp_net = 0
+        if opp_team:
+            opp_row = adv[adv['TEAM_ID'] == opp_team['id']]
+            if not opp_row.empty:
+                opp_net = float(opp_row.iloc[0]['NET_RATING'])
+
+        # Last 5 games win % for form
+        last5_bulls = leaguegamelog.LeagueGameLog(team_id_nullable=bulls_id, season_nullable=current_season, last_n_games_nullable=5).get_data_frames()[0]
+        last5_opp = leaguegamelog.LeagueGameLog(team_id_nullable=opp_team['id'], season_nullable=current_season, last_n_games_nullable=5).get_data_frames()[0] if opp_team else pd.DataFrame()
+
+        bulls_recent_win_pct = (last5_bulls['WL'].str.count('W').sum() / max(1, len(last5_bulls))) * 100 if not last5_bulls.empty else 50
+        opp_recent_win_pct = (last5_opp['WL'].str.count('W').sum() / max(1, len(last5_opp))) * 100 if not last5_opp.empty else 50
+
+        # Win probability formula
+        rating_diff = (bulls_advanced.get('net_rating', 0) - opp_net) * 1.8
+        home_adv = 5 if is_home else -3
+        form_diff = (bulls_recent_win_pct - opp_recent_win_pct) * 0.4
+        win_probability = max(5, min(95, 50 + rating_diff + home_adv + form_diff))
+        win_explanation = f"Net rating diff ({rating_diff:.1f}) + home adv ({home_adv}) + recent form ({form_diff:.1f})"
+
+        print(f"Next game: {next_game['date']} vs {next_opp_abbr} ({'Home' if is_home else 'Away'})")
+        print(f"Win Probability: {win_probability:.1f}%")
+        print(f"Explanation: {win_explanation}")
+    else:
+        print("No upcoming games found")
+except Exception as e:
+    print(f"Next game / win prob error: {e}")
 # Injury Report
 # 3. Injury Report - Proper column parsing + cleaned names + correct status
 try:
@@ -216,7 +241,9 @@ data = {
         "pace": bulls_advanced.get("pace")
     },
     "next_game": next_game,
-    "injuries": injuries  # now with clean player + full status
+    "win_probability": round(win_probability, 1) if win_probability is not None else None,
+    "win_explanation": win_explanation,
+    "injuries": injuries
 }
 
 with open('bulls_daily.json', 'w') as f:
