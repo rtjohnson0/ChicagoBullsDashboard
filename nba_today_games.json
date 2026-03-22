@@ -1,26 +1,26 @@
 {
-  "date": "2026-03-22 22:13",
+  "date": "2026-03-22 22:45",
   "all_games_today": [
     {
       "away_team": "Nets",
       "home_team": "Kings",
-      "away_score": 4,
-      "home_score": 4,
-      "score": "4 - 4",
-      "status": "Q1 9:48",
-      "quarter": 1,
-      "time_remaining": "PT09M48.00S",
+      "away_score": 36,
+      "home_score": 38,
+      "score": "36 - 38",
+      "status": "Q2 8:28",
+      "quarter": 2,
+      "time_remaining": "PT08M28.00S",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Trail Blazers",
       "home_team": "Nuggets",
-      "away_score": 69,
-      "home_score": 75,
-      "score": "69 - 75",
-      "status": "Half",
-      "quarter": 2,
+      "away_score": 93,
+      "home_score": 107,
+      "score": "93 - 107",
+      "status": "Q3 :00.0",
+      "quarter": 3,
       "time_remaining": "PT00M00.00S",
       "is_live": true,
       "is_completed": false
