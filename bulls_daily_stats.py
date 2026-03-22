@@ -124,34 +124,77 @@ except Exception as e:
     print(f"Next game error: {e}")
 
 # Injury Report
+# 3. Injury Report - Proper column parsing + cleaned names + correct status
 try:
-    print("\nScraping Bulls injury report...")
+    print("\nScraping Bulls injury report from CBS...")
     url = "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/injuries/"
-    headers = {"User-Agent": "Mozilla/5.0"}
+    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
-    table = soup.select_one("table")
+    table = soup.select_one("table.injuries-table") or soup.select_one("table")
+    injuries = []
+
     if table:
-        rows = table.find_all("tr")[1:]
+        rows = table.find_all("tr")[1:]  # skip header
         for row in rows:
             cols = row.find_all("td")
             if len(cols) >= 4:
+                # Player name cell - clean duplication
+                player_cell = cols[0]
+                player_text = player_cell.get_text(strip=True)
+
+                # Remove duplicated name pattern (e.g. "J. SmithJalen Smith" → "Jalen Smith")
+                import re
+                # Split on lowercase-uppercase transition or use regex to take full name
+                cleaned_player = re.sub(r'([A-Z][a-z]\.)\s*([A-Z][a-z]+)', r'\2', player_text)  # e.g. "J. SmithJalen Smith" → "Jalen Smith"
+                cleaned_player = re.sub(r'([A-Z][a-z]+)([A-Z][a-z]+)', r'\1 \2', cleaned_player)  # add space if missing
+                player = cleaned_player.strip() or player_text.strip()
+
+                # Position
+                position = cols[1].get_text(strip=True)
+
+                # Injury / Date (usually col 2)
+                injury_date = cols[2].get_text(strip=True)
+
+                # Status - this is usually col 3 or 4 (Questionable, Out, etc.)
+                # CBS often has Status in col 3 or 4 - check length and content
+                status_col = cols[3] if len(cols) > 3 else cols[2]
+                status = status_col.get_text(strip=True)
+
+                # If status looks like date or injury type, swap with previous column
+                if any(word in status.lower() for word in ['thu', 'fri', 'sat', 'sun', 'mon', 'calf', 'knee', 'ankle']):
+                    # Likely swapped columns - try col 2 as status
+                    status = cols[2].get_text(strip=True)
+                    injury_date = cols[3].get_text(strip=True) if len(cols) > 3 else injury_date
+
+                # Clean status to standard terms
+                status_lower = status.lower()
+                if 'out' in status_lower or 'out indefinitely' in status_lower:
+                    status_clean = 'Out'
+                elif 'questionable' in status_lower or 'doubtful' in status_lower:
+                    status_clean = 'Questionable'
+                elif 'probable' in status_lower or 'day-to-day' in status_lower:
+                    status_clean = 'Probable / Day-to-Day'
+                else:
+                    status_clean = status or 'Unknown'
+
                 injuries.append({
-                    "player": cols[0].text.strip(),
-                    "position": cols[1].text.strip(),
-                    "injury": cols[2].text.strip(),
-                    "status": cols[3].text.strip()
+                    "player": player,
+                    "position": position,
+                    "injury": injury_date,
+                    "status": status_clean
                 })
 
     if injuries:
-        print("\nBulls Injury Report:")
+        print("\nBulls Injury Report (cleaned & fixed):")
         for inj in injuries:
             print(f"{inj['player']} ({inj['position']}): {inj['injury']} - {inj['status']}")
+    else:
+        print("No injuries found or page structure changed - CBS may have updated layout")
 except Exception as e:
     print(f"Injury scrape error: {e}")
     injuries = []
-
 # Save to JSON
 data = {
     "date": datetime.now().strftime('%Y-%m-%d'),
@@ -173,13 +216,11 @@ data = {
         "pace": bulls_advanced.get("pace")
     },
     "next_game": next_game,
-    "injuries": injuries
+    "injuries": injuries  # now with clean player + full status
 }
 
 with open('bulls_daily.json', 'w') as f:
     json.dump(data, f, indent=2)
 
 print("\nSaved: bulls_daily.json")
-print("JSON content preview:")
-print(json.dumps(data, indent=2))
 print("Script finished.")

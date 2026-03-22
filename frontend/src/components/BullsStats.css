@@ -79,36 +79,39 @@
   color: #fff;
 }
 
+/* Injury Cards - with colored status */
 .injuries-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .injury-card {
-  background: linear-gradient(135deg, rgba(40, 40, 60, 0.9), rgba(20, 20, 35, 0.9));
+  background: linear-gradient(135deg, rgba(40, 40, 60, 0.85), rgba(20, 20, 35, 0.9));
   border-radius: 12px;
   padding: 1.2rem;
-  border: 1px solid rgba(206, 17, 65, 0.2);
-  transition: all 0.3s;
+  border: 1px solid rgba(206, 17, 65, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .injury-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(206, 17, 65, 0.5);
+  border-color: rgba(206, 17, 65, 0.4);
   box-shadow: 0 15px 35px rgba(206, 17, 65, 0.25);
 }
 
 .injury-player {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .injury-detail {
   font-size: 0.95rem;
-  color: #ccc;
+  color: #cccccc;
   margin: 0.3rem 0;
 }
 
@@ -116,20 +119,48 @@
   margin-top: 0.8rem;
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  font-weight: 500;
+  gap: 0.7rem;
+  font-weight: 600;
+  font-size: 1rem;
 }
 
+/* Status dot + color */
 .status-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
-.status-out .status-dot { background: #f44336; box-shadow: 0 0 10px #f44336; }
-.status-questionable .status-dot { background: #ff9800; box-shadow: 0 0 10px #ff9800; }
-.status-probable .status-dot { background: #4caf50; box-shadow: 0 0 10px #4caf50; }
+/* Out - Red */
+.status-out .status-dot {
+  background: #ff2d55;
+  box-shadow: 0 0 12px rgba(255, 45, 85, 0.7);
+}
 
+.status-out .injury-status {
+  color: #ff2d55;
+}
+
+/* Questionable - Yellow/Orange */
+.status-questionable .status-dot {
+  background: #ff9500;
+  box-shadow: 0 0 12px rgba(255, 149, 0, 0.7);
+}
+
+.status-questionable .injury-status {
+  color: #ff9500;
+}
+
+/* Probable / Other - Green */
+.status-probable .status-dot {
+  background: #34c759;
+  box-shadow: 0 0 12px rgba(52, 199, 89, 0.6);
+}
+
+.status-probable .injury-status {
+  color: #34c759;
+}
 .refresh-btn {
   background: #CE1141;
   color: white;

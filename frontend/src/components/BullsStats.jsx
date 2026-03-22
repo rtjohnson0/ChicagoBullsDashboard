@@ -104,31 +104,41 @@ function BullsStats() {
         </div>
       )}
 
-      {data?.injuries?.length > 0 && (
-        <div className="injuries">
-          <h3>Current Injuries</h3>
-          <div className="injuries-grid">
-            {data.injuries.map((inj, i) => {
-              const statusLower = inj.status.toLowerCase();
-              let statusClass = 'status-probable';
-              if (statusLower.includes('out')) statusClass = 'status-out';
-              else if (statusLower.includes('questionable')) statusClass = 'status-questionable';
+    {data?.injuries?.length > 0 && (
+  <div className="injuries">
+    <h3>Current Injuries</h3>
+    <div className="injuries-grid">
+      {data.injuries.map((inj, i) => {
+        const statusLower = inj.status?.toLowerCase() || '';
+        let statusClass = 'status-probable';
+        let statusText = inj.status || 'Unknown';
 
-              return (
-                <div key={i} className={`injury-card ${statusClass}`}>
-                  <div className="injury-player">{inj.player}</div>
-                  <div className="injury-detail">Position: {inj.position}</div>
-                  <div className="injury-detail">Injury: {inj.injury}</div>
-                  <div className={`injury-status ${statusClass}`}>
-                    <span className="status-dot"></span>
-                    Status: {inj.status || 'Unknown'}
-                  </div>
-                </div>
-              );
-            })}
+        if (statusLower.includes('out')) {
+          statusClass = 'status-out';
+          statusText = 'Out';
+        } else if (statusLower.includes('questionable') || statusLower.includes('doubtful')) {
+          statusClass = 'status-questionable';
+          statusText = 'Questionable';
+        } else if (statusLower.includes('probable') || statusLower.includes('day-to-day')) {
+          statusClass = 'status-probable';
+          statusText = 'Probable';
+        }
+
+        return (
+          <div key={i} className={`injury-card ${statusClass}`}>
+            <div className="injury-player">{inj.player}</div>
+            <div className="injury-detail">Position: {inj.position}</div>
+            <div className="injury-detail">Injury: {inj.injury}</div>
+            <div className={`injury-status ${statusClass}`}>
+              <span className="status-dot"></span>
+              {statusText}
+            </div>
           </div>
-        </div>
-      )}
+        );
+      })}
+    </div>
+  </div>
+)}
     </section>
   );
 }
