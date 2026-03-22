@@ -1,15 +1,15 @@
 {
-  "date": "2026-03-22 21:15",
+  "date": "2026-03-22 21:41",
   "all_games_today": [
     {
       "away_team": "Trail Blazers",
       "home_team": "Nuggets",
-      "away_score": 6,
-      "home_score": 10,
-      "score": "6 - 10",
-      "status": "Q1 10:04",
-      "quarter": 1,
-      "time_remaining": "PT10M04.00S",
+      "away_score": 50,
+      "home_score": 51,
+      "score": "50 - 51",
+      "status": "Q2 7:57",
+      "quarter": 2,
+      "time_remaining": "PT07M57.00S",
       "is_live": true,
       "is_completed": false
     },
