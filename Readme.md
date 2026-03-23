@@ -4,7 +4,7 @@ A modern, data-driven dashboard for analyzing the performance of the Chicago Bul
 
 ## 🚀 Live Demo
 
-👉 (Add your Vercel link here once deployed)
+👉 (https://vercel.com/rtjohnson0s-projects/chicago-bulls-dashboard/8veHHDiWTNt6QWU2uUmo5eDGH92D))
 
 ---
 
