@@ -1,30 +1,6 @@
 {
-  "date": "2026-03-23 01:05",
+  "date": "2026-03-23 03:42",
   "all_games_today": [
-    {
-      "away_team": "Wizards",
-      "home_team": "Knicks",
-      "away_score": 67,
-      "home_score": 87,
-      "score": "67 - 87",
-      "status": "Q3 6:40",
-      "quarter": 3,
-      "time_remaining": "PT06M40.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Timberwolves",
-      "home_team": "Celtics",
-      "away_score": 47,
-      "home_score": 44,
-      "score": "47 - 44",
-      "status": "Half",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Trail Blazers",
       "home_team": "Nuggets",
@@ -50,15 +26,39 @@
       "is_completed": false
     },
     {
+      "away_team": "Wizards",
+      "home_team": "Knicks",
+      "away_score": 113,
+      "home_score": 145,
+      "score": "113 - 145",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Timberwolves",
+      "home_team": "Celtics",
+      "away_score": 102,
+      "home_score": 92,
+      "score": "102 - 92",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
       "away_team": "Raptors",
       "home_team": "Suns",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "9:00 pm ET",
-      "quarter": 0,
+      "away_score": 98,
+      "home_score": 120,
+      "score": "98 - 120",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     }
   ]
