@@ -1,21 +1,16 @@
 {
   "date": "2026-03-22",
   "bulls_season_stats": {
-    "ppg": 115.8,
-    "rpg": 45.0,
-    "apg": 28.7,
-    "tovpg": 15.2,
+    "pts": 115.8,
+    "reb": 45.0,
+    "ast": 28.7,
+    "tov": 15.2,
     "fgm": 42.2,
     "fga": 90.1,
     "fg3m": 14.6,
     "fg3a": 40.2,
     "ftm": 16.8,
-    "fta": 21.5,
-    "off_rating": 112.3,
-    "def_rating": 116.8,
-    "net_rating": -4.5,
-    "ts_pct": 0.581,
-    "pace": 102.53
+    "fta": 21.5
   },
   "next_game": {
     "date": null,
@@ -38,5 +33,11 @@
       "injury": "Sun, Mar 22",
       "status": "Wrist"
     }
-  ]
+  ],
+  "league_ranks": {
+    "pts": 13,
+    "reb": 9,
+    "ast": 5
+  },
+  "last5_averages": {}
 }

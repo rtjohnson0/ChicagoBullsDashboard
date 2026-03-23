@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from nba_api.stats.endpoints import leaguedashteamstats, leaguegamefinder, leaguegamelog
-from nba_api.stats.static import teams  # ← THIS WAS MISSING – now imported
+from nba_api.stats.static import teams
 from datetime import datetime, timedelta
 import json
 import time
@@ -19,8 +19,10 @@ next_game = {"date": None, "opponent": None, "is_home": None, "time": "TBD"}
 injuries = []
 win_probability = None
 win_explanation = ""
+league_ranks = {}
+last5_averages = {}
 
-# 1. Bulls Stats
+# 1. Bulls Season Stats
 try:
     print("\nFetching Bulls season stats...")
     time.sleep(1.5)
@@ -76,7 +78,42 @@ try:
 except Exception as e:
     print(f"Stats error: {e}")
 
-# 2. Next Game + Win Probability
+# 2. League Ranks & Last 5 Games Trends
+try:
+    print("\nCalculating league ranks & last 5 games trends...")
+    # League ranks (1 = best)
+    for stat in ['PTS', 'REB', 'AST', 'OFF_RATING', 'NET_RATING', 'TS_PCT', 'PACE']:
+        if stat in basic.columns:
+            sorted_df = basic.sort_values(stat, ascending=False).reset_index(drop=True)
+            rank_series = sorted_df[sorted_df['TEAM_ID'] == bulls_id]
+            if not rank_series.empty:
+                league_ranks[stat.lower()] = int(rank_series.index[0] + 1)  # 1-based rank
+
+    # Last 5 games averages
+    last5 = leaguegamelog.LeagueGameLog(
+        team_id=bulls_id,  # FIXED: team_id instead of team_id_nullable
+        season=current_season,
+        last_n_games=5
+    ).get_data_frames()[0]
+
+    if not last5.empty:
+        last5_averages = {
+            "ppg": float(last5['PTS'].mean()),
+            "rpg": float(last5['REB'].mean()),
+            "apg": float(last5['AST'].mean()),
+        }
+
+    print("\nLeague Ranks (1 = best):")
+    for stat, rank in league_ranks.items():
+        print(f"{stat.upper()}: {rank}")
+
+    print("\nLast 5 games averages:")
+    for stat, avg in last5_averages.items():
+        print(f"{stat.upper()}: {avg:.1f}")
+except Exception as e:
+    print(f"Trends/ranks error: {e}")
+
+# 3. Next Game + Win Probability
 try:
     print("\nFetching next game and win probability...")
     games = leaguegamefinder.LeagueGameFinder(team_id_nullable=bulls_id, season_nullable=current_season).get_data_frames()[0]
@@ -95,7 +132,7 @@ try:
             "time": "TBD"
         }
 
-        # Get opponent net rating
+        # Opponent net rating
         opp_team = teams.find_team_by_abbreviation(next_opp_abbr)
         opp_net = 0
         if opp_team:
@@ -103,14 +140,14 @@ try:
             if not opp_row.empty:
                 opp_net = float(opp_row.iloc[0]['NET_RATING'])
 
-        # Last 5 games win % for form
-        last5_bulls = leaguegamelog.LeagueGameLog(team_id_nullable=bulls_id, season_nullable=current_season, last_n_games_nullable=5).get_data_frames()[0]
-        last5_opp = leaguegamelog.LeagueGameLog(team_id_nullable=opp_team['id'], season_nullable=current_season, last_n_games_nullable=5).get_data_frames()[0] if opp_team else pd.DataFrame()
+        # Last 5 games win %
+        last5_bulls = leaguegamelog.LeagueGameLog(team_id=bulls_id, season=current_season, last_n_games=5).get_data_frames()[0]
+        last5_opp = leaguegamelog.LeagueGameLog(team_id=opp_team['id'], season=current_season, last_n_games=5).get_data_frames()[0] if opp_team else pd.DataFrame()
 
         bulls_recent_win_pct = (last5_bulls['WL'].str.count('W').sum() / max(1, len(last5_bulls))) * 100 if not last5_bulls.empty else 50
         opp_recent_win_pct = (last5_opp['WL'].str.count('W').sum() / max(1, len(last5_opp))) * 100 if not last5_opp.empty else 50
 
-        # Win probability formula
+        # Win probability
         rating_diff = (bulls_advanced.get('net_rating', 0) - opp_net) * 1.8
         home_adv = 5 if is_home else -3
         form_diff = (bulls_recent_win_pct - opp_recent_win_pct) * 0.4
@@ -121,15 +158,15 @@ try:
         print(f"Win Probability: {win_probability:.1f}%")
         print(f"Explanation: {win_explanation}")
     else:
-        print("No upcoming games found – win probability set to N/A")
+        print("No upcoming games found")
 except Exception as e:
     print(f"Next game / win prob error: {e}")
 
-# Injury Report (your current version – cleaned player name)
+# 4. Injury Report
 try:
     print("\nScraping Bulls injury report...")
     url = "https://www.cbssports.com/nba/teams/CHI/chicago-bulls/injuries/"
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}
+    headers = {"User-Agent": "Mozilla/5.0"}
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, "html.parser")
 
@@ -141,7 +178,7 @@ try:
             cols = row.find_all("td")
             if len(cols) >= 4:
                 player_text = cols[0].get_text(strip=True)
-                # Clean duplicated name (take the last part as full name)
+                # Clean duplicated name
                 player = player_text.split()[-1] if len(player_text.split()) > 1 else player_text
                 injuries.append({
                     "player": player,
@@ -153,34 +190,29 @@ except Exception as e:
     print(f"Injury scrape error: {e}")
     injuries = []
 
-# Save JSON
+# 5. Save JSON – convert all non-serializable types
 data = {
     "date": datetime.now().strftime('%Y-%m-%d'),
     "bulls_season_stats": {
-        "ppg": bulls_basic.get("pts"),
-        "rpg": bulls_basic.get("reb"),
-        "apg": bulls_basic.get("ast"),
-        "tovpg": bulls_basic.get("tov"),
-        "fgm": bulls_basic.get("fgm"),
-        "fga": bulls_basic.get("fga"),
-        "fg3m": bulls_basic.get("fg3m"),
-        "fg3a": bulls_basic.get("fg3a"),
-        "ftm": bulls_basic.get("ftm"),
-        "fta": bulls_basic.get("fta"),
-        "off_rating": bulls_advanced.get("off_rating"),
-        "def_rating": bulls_advanced.get("def_rating"),
-        "net_rating": bulls_advanced.get("net_rating"),
-        "ts_pct": bulls_advanced.get("ts_pct"),
-        "pace": bulls_advanced.get("pace")
+        k: float(v) if pd.notna(v) else None
+        for k, v in bulls_basic.items()
     },
     "next_game": next_game,
-    "win_probability": round(win_probability, 1) if win_probability is not None else None,
+    "win_probability": float(win_probability) if win_probability is not None else None,
     "win_explanation": win_explanation,
-    "injuries": injuries
+    "injuries": injuries,
+    "league_ranks": {
+        k: int(v) if pd.notna(v) else None
+        for k, v in league_ranks.items()
+    },
+    "last5_averages": {
+        k: float(v) if pd.notna(v) else None
+        for k, v in last5_averages.items()
+    }
 }
 
 with open('bulls_daily.json', 'w') as f:
-    json.dump(data, f, indent=2)
+    json.dump(data, f, indent=2, default=str)  # default=str as safety net
 
 print("\nSaved: bulls_daily.json")
 print("Script finished.")
