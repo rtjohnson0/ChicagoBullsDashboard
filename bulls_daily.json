@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-24",
+  "date": "2026-03-25",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,27 +11,9 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Yabusele",
-      "position": "PF",
-      "injury": "Mon, Mar 23",
-      "status": "Ankle"
-    },
-    {
-      "player": "Simons",
-      "position": "SG",
-      "injury": "Mon, Mar 23",
-      "status": "Wrist"
-    },
-    {
-      "player": "Okoro",
-      "position": "SF",
-      "injury": "Mon, Mar 23",
-      "status": "Knee"
-    },
-    {
       "player": "Ivey",
       "position": "SG",
-      "injury": "Mon, Mar 23",
+      "injury": "Tue, Mar 24",
       "status": "Knee"
     }
   ],
