@@ -1,15 +1,15 @@
 {
-  "date": "2026-03-25 03:46",
+  "date": "2026-03-25 05:18",
   "all_games_today": [
     {
       "away_team": "Nuggets",
       "home_team": "Suns",
-      "away_score": 35,
-      "home_score": 37,
-      "score": "35 - 37",
-      "status": "Q2 9:01",
-      "quarter": 2,
-      "time_remaining": "PT09M01.00S",
+      "away_score": 112,
+      "home_score": 108,
+      "score": "112 - 108",
+      "status": "Q4 5:55",
+      "quarter": 4,
+      "time_remaining": "PT05M55.00S",
       "is_live": true,
       "is_completed": false
     },
