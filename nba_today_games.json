@@ -1,18 +1,6 @@
 {
-  "date": "2026-03-25 05:18",
+  "date": "2026-03-25 06:16",
   "all_games_today": [
-    {
-      "away_team": "Nuggets",
-      "home_team": "Suns",
-      "away_score": 112,
-      "home_score": 108,
-      "score": "112 - 108",
-      "status": "Q4 5:55",
-      "quarter": 4,
-      "time_remaining": "PT05M55.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Kings",
       "home_team": "Hornets",
@@ -43,6 +31,18 @@
       "away_score": 131,
       "home_score": 136,
       "score": "131 - 136",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Nuggets",
+      "home_team": "Suns",
+      "away_score": 125,
+      "home_score": 123,
+      "score": "125 - 123",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
