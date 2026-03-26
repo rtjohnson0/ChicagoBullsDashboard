@@ -1,5 +1,5 @@
 {
-  "date": "2026-03-25",
+  "date": "2026-03-26",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,10 +11,22 @@
   "win_explanation": "",
   "injuries": [
     {
+      "player": "Simons",
+      "position": "SG",
+      "injury": "Thu, Mar 26",
+      "status": "Wrist"
+    },
+    {
       "player": "Ivey",
       "position": "SG",
-      "injury": "Tue, Mar 24",
+      "injury": "Thu, Mar 26",
       "status": "Knee"
+    },
+    {
+      "player": "Kawamura",
+      "position": "PG",
+      "injury": "Thu, Mar 26",
+      "status": "Quadriceps"
     }
   ],
   "league_ranks": {},
