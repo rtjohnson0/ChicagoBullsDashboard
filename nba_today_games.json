@@ -1,40 +1,40 @@
 {
-  "date": "2026-03-26 22:50",
+  "date": "2026-03-26 23:19",
   "all_games_today": [
     {
       "away_team": "Knicks",
       "home_team": "Hornets",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
-    {
-      "away_team": "Pelicans",
-      "home_team": "Pistons",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 10,
+      "home_score": 14,
+      "score": "10 - 14",
+      "status": "Q1 8:20",
+      "quarter": 1,
+      "time_remaining": "PT08M20.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Kings",
       "home_team": "Magic",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 11,
+      "home_score": 14,
+      "score": "11 - 14",
+      "status": "Q1 6:58",
+      "quarter": 1,
+      "time_remaining": "PT06M58.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pelicans",
+      "home_team": "Pistons",
+      "away_score": 5,
+      "home_score": 3,
+      "score": "5 - 3",
+      "status": "Q1 9:04",
+      "quarter": 1,
+      "time_remaining": "PT09M04.00S",
+      "is_live": true,
       "is_completed": false
     }
   ]
