@@ -1,42 +1,6 @@
 {
-  "date": "2026-03-28 03:45",
+  "date": "2026-03-28 05:16",
   "all_games_today": [
-    {
-      "away_team": "Mavericks",
-      "home_team": "Trail Blazers",
-      "away_score": 71,
-      "home_score": 70,
-      "score": "71 - 70",
-      "status": "Q3 3:20",
-      "quarter": 3,
-      "time_remaining": "PT03M20.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Wizards",
-      "home_team": "Warriors",
-      "away_score": 92,
-      "home_score": 92,
-      "score": "92 - 92",
-      "status": "Q3 :48.5",
-      "quarter": 3,
-      "time_remaining": "PT00M48.50S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Nets",
-      "home_team": "Lakers",
-      "away_score": 59,
-      "home_score": 61,
-      "score": "59 - 61",
-      "status": "Half",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Clippers",
       "home_team": "Pacers",
@@ -115,6 +79,42 @@
       "away_score": 129,
       "home_score": 135,
       "score": "129 - 135",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Wizards",
+      "home_team": "Warriors",
+      "away_score": 126,
+      "home_score": 131,
+      "score": "126 - 131",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Mavericks",
+      "home_team": "Trail Blazers",
+      "away_score": 100,
+      "home_score": 93,
+      "score": "100 - 93",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Nets",
+      "home_team": "Lakers",
+      "away_score": 99,
+      "home_score": 116,
+      "score": "99 - 116",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
