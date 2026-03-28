@@ -1,6 +1,18 @@
 {
-  "date": "2026-03-28 21:18",
+  "date": "2026-03-28 21:46",
   "all_games_today": [
+    {
+      "away_team": "Pistons",
+      "home_team": "Timberwolves",
+      "away_score": 6,
+      "home_score": 9,
+      "score": "6 - 9",
+      "status": "Q1 8:50",
+      "quarter": 1,
+      "time_remaining": "PT08M50.00S",
+      "is_live": true,
+      "is_completed": false
+    },
     {
       "away_team": "Spurs",
       "home_team": "Bucks",
@@ -9,20 +21,8 @@
       "score": "127 - 95",
       "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Pistons",
-      "home_team": "Timberwolves",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "5:30 pm ET",
-      "quarter": 0,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     },
     {
