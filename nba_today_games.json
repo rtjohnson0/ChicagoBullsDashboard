@@ -1,15 +1,27 @@
 {
-  "date": "2026-03-28 21:46",
+  "date": "2026-03-28 22:15",
   "all_games_today": [
+    {
+      "away_team": "76ers",
+      "home_team": "Hornets",
+      "away_score": 6,
+      "home_score": 8,
+      "score": "6 - 8",
+      "status": "Q1 9:01",
+      "quarter": 1,
+      "time_remaining": "PT09M01.00S",
+      "is_live": true,
+      "is_completed": false
+    },
     {
       "away_team": "Pistons",
       "home_team": "Timberwolves",
-      "away_score": 6,
-      "home_score": 9,
-      "score": "6 - 9",
-      "status": "Q1 8:50",
-      "quarter": 1,
-      "time_remaining": "PT08M50.00S",
+      "away_score": 37,
+      "home_score": 26,
+      "score": "37 - 26",
+      "status": "Q2 9:11",
+      "quarter": 2,
+      "time_remaining": "PT09M11.00S",
       "is_live": true,
       "is_completed": false
     },
@@ -23,18 +35,6 @@
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "76ers",
-      "home_team": "Hornets",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
       "is_completed": false
     },
     {
