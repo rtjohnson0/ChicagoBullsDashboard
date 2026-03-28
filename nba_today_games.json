@@ -1,14 +1,14 @@
 {
-  "date": "2026-03-28 20:16",
+  "date": "2026-03-28 20:49",
   "all_games_today": [
     {
       "away_team": "Spurs",
       "home_team": "Bucks",
-      "away_score": 67,
-      "home_score": 45,
-      "score": "67 - 45",
-      "status": "Half",
-      "quarter": 2,
+      "away_score": 102,
+      "home_score": 79,
+      "score": "102 - 79",
+      "status": "END Q3",
+      "quarter": 3,
       "time_remaining": "PT00M00.00S",
       "is_live": true,
       "is_completed": false
