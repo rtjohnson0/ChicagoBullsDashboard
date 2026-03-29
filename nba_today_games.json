@@ -1,28 +1,28 @@
 {
-  "date": "2026-03-29 20:51",
+  "date": "2026-03-29 21:20",
   "all_games_today": [
     {
       "away_team": "Clippers",
       "home_team": "Bucks",
-      "away_score": 60,
-      "home_score": 46,
-      "score": "60 - 46",
-      "status": "Q3 11:20",
+      "away_score": 92,
+      "home_score": 70,
+      "score": "92 - 70",
+      "status": "Q3 :59.4",
       "quarter": 3,
-      "time_remaining": "PT11M20.00S",
+      "time_remaining": "PT00M59.40S",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Heat",
       "home_team": "Pacers",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "5:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 13,
+      "home_score": 5,
+      "score": "13 - 5",
+      "status": "Q1 7:19",
+      "quarter": 1,
+      "time_remaining": "PT07M19.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
