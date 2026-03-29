@@ -1,27 +1,15 @@
 {
-  "date": "2026-03-29 01:11",
+  "date": "2026-03-29 04:11",
   "all_games_today": [
     {
-      "away_team": "Bulls",
-      "home_team": "Grizzlies",
-      "away_score": 58,
-      "home_score": 56,
-      "score": "58 - 56",
-      "status": "Q2 :23.5",
-      "quarter": 2,
-      "time_remaining": "PT00M23.50S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Kings",
-      "home_team": "Hawks",
-      "away_score": 72,
-      "home_score": 84,
-      "score": "72 - 84",
-      "status": "Q3 3:14",
-      "quarter": 3,
-      "time_remaining": "PT03M14.00S",
+      "away_team": "Jazz",
+      "home_team": "Suns",
+      "away_score": 109,
+      "home_score": 134,
+      "score": "109 - 134",
+      "status": "Q4 :45.7",
+      "quarter": 4,
+      "time_remaining": "PT00M45.70S",
       "is_live": true,
       "is_completed": false
     },
@@ -62,15 +50,27 @@
       "is_completed": false
     },
     {
-      "away_team": "Jazz",
-      "home_team": "Suns",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "10:00 pm ET",
-      "quarter": 0,
+      "away_team": "Kings",
+      "home_team": "Hawks",
+      "away_score": 113,
+      "home_score": 123,
+      "score": "113 - 123",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bulls",
+      "home_team": "Grizzlies",
+      "away_score": 124,
+      "home_score": 125,
+      "score": "124 - 125",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
       "is_completed": false
     }
   ]
