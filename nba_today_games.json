@@ -1,6 +1,66 @@
 {
-  "date": "2026-03-29 21:57",
+  "date": "2026-03-29 22:24",
   "all_games_today": [
+    {
+      "away_team": "Celtics",
+      "home_team": "Hornets",
+      "away_score": 17,
+      "home_score": 14,
+      "score": "17 - 14",
+      "status": "Q1 3:55",
+      "quarter": 1,
+      "time_remaining": "PT03M55.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Magic",
+      "home_team": "Raptors",
+      "away_score": 20,
+      "home_score": 14,
+      "score": "20 - 14",
+      "status": "Q1 5:17",
+      "quarter": 1,
+      "time_remaining": "PT05M17.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Heat",
+      "home_team": "Pacers",
+      "away_score": 75,
+      "home_score": 79,
+      "score": "75 - 79",
+      "status": "Half",
+      "quarter": 2,
+      "time_remaining": "PT00M00.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Kings",
+      "home_team": "Nets",
+      "away_score": 8,
+      "home_score": 17,
+      "score": "8 - 17",
+      "status": "Q1 4:55",
+      "quarter": 1,
+      "time_remaining": "PT04M55.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Wizards",
+      "home_team": "Trail Blazers",
+      "away_score": 6,
+      "home_score": 13,
+      "score": "6 - 13",
+      "status": "Q1 6:05",
+      "quarter": 1,
+      "time_remaining": "PT06M05.00S",
+      "is_live": true,
+      "is_completed": false
+    },
     {
       "away_team": "Clippers",
       "home_team": "Bucks",
@@ -9,68 +69,8 @@
       "score": "127 - 113",
       "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT00M00.00S",
+      "time_remaining": "",
       "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Heat",
-      "home_team": "Pacers",
-      "away_score": 52,
-      "home_score": 59,
-      "score": "52 - 59",
-      "status": "Q2 6:01",
-      "quarter": 2,
-      "time_remaining": "PT06M01.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Kings",
-      "home_team": "Nets",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
-    {
-      "away_team": "Celtics",
-      "home_team": "Hornets",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
-    {
-      "away_team": "Magic",
-      "home_team": "Raptors",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
-    {
-      "away_team": "Wizards",
-      "home_team": "Trail Blazers",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
       "is_completed": false
     },
     {
