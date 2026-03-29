@@ -1,15 +1,15 @@
 {
-  "date": "2026-03-29 19:47",
+  "date": "2026-03-29 20:18",
   "all_games_today": [
     {
       "away_team": "Clippers",
       "home_team": "Bucks",
-      "away_score": 11,
-      "home_score": 7,
-      "score": "11 - 7",
-      "status": "Q1 8:19",
-      "quarter": 1,
-      "time_remaining": "PT08M19.00S",
+      "away_score": 36,
+      "home_score": 34,
+      "score": "36 - 34",
+      "status": "Q2 6:50",
+      "quarter": 2,
+      "time_remaining": "PT06M50.00S",
       "is_live": true,
       "is_completed": false
     },
