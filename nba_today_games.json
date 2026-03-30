@@ -1,18 +1,6 @@
 {
-  "date": "2026-03-30 04:18",
+  "date": "2026-03-30 06:09",
   "all_games_today": [
-    {
-      "away_team": "Warriors",
-      "home_team": "Nuggets",
-      "away_score": 77,
-      "home_score": 92,
-      "score": "77 - 92",
-      "status": "Q4 10:07",
-      "quarter": 4,
-      "time_remaining": "PT10M07.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Clippers",
       "home_team": "Bucks",
@@ -103,6 +91,18 @@
       "away_score": 100,
       "home_score": 111,
       "score": "100 - 111",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Nuggets",
+      "away_score": 93,
+      "home_score": 116,
+      "score": "93 - 116",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
