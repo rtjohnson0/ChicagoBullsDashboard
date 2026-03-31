@@ -1,30 +1,6 @@
 {
-  "date": "2026-03-31 03:30",
+  "date": "2026-03-31 05:27",
   "all_games_today": [
-    {
-      "away_team": "Wizards",
-      "home_team": "Lakers",
-      "away_score": 50,
-      "home_score": 72,
-      "score": "50 - 72",
-      "status": "Q3 8:44",
-      "quarter": 3,
-      "time_remaining": "PT08M44.00S",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Pistons",
-      "home_team": "Thunder",
-      "away_score": 74,
-      "home_score": 79,
-      "score": "74 - 79",
-      "status": "END Q3",
-      "quarter": 3,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "76ers",
       "home_team": "Heat",
@@ -91,7 +67,31 @@
       "away_score": 122,
       "home_score": 113,
       "score": "122 - 113",
-      "status": "Final               ",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "Thunder",
+      "away_score": 110,
+      "home_score": 114,
+      "score": "110 - 114",
+      "status": "Final/OT",
+      "quarter": 5,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Wizards",
+      "home_team": "Lakers",
+      "away_score": 101,
+      "home_score": 120,
+      "score": "101 - 120",
+      "status": "Final",
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
