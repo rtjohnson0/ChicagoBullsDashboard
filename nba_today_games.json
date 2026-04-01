@@ -1,28 +1,28 @@
 {
-  "date": "2026-04-01 22:57",
+  "date": "2026-04-01 23:31",
   "all_games_today": [
-    {
-      "away_team": "76ers",
-      "home_team": "Wizards",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
     {
       "away_team": "Hawks",
       "home_team": "Magic",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 18,
+      "home_score": 20,
+      "score": "18 - 20",
+      "status": "Q1 2:59",
+      "quarter": 1,
+      "time_remaining": "PT02M59.00S",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "76ers",
+      "home_team": "Wizards",
+      "away_score": 30,
+      "home_score": 25,
+      "score": "30 - 25",
+      "status": "Q1 1:45",
+      "quarter": 1,
+      "time_remaining": "PT01M45.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
