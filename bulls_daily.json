@@ -1,17 +1,6 @@
 {
-  "date": "2026-03-31",
-  "bulls_season_stats": {
-    "pts": 116.3,
-    "reb": 45.1,
-    "ast": 28.6,
-    "tov": 15.2,
-    "fgm": 42.3,
-    "fga": 90.2,
-    "fg3m": 14.5,
-    "fg3a": 40.3,
-    "ftm": 17.2,
-    "fta": 22.0
-  },
+  "date": "2026-04-01",
+  "bulls_season_stats": {},
   "next_game": {
     "date": null,
     "opponent": null,
@@ -22,28 +11,18 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Richards",
-      "position": "C",
-      "injury": "Mon, Mar 30",
-      "status": "Elbow"
+      "player": "Yabusele",
+      "position": "PF",
+      "injury": "Tue, Mar 31",
+      "status": "Ankle"
     },
     {
       "player": "Simons",
       "position": "SG",
-      "injury": "Mon, Mar 30",
+      "injury": "Tue, Mar 31",
       "status": "Wrist"
-    },
-    {
-      "player": "McClung",
-      "position": "PG",
-      "injury": "Mon, Mar 30",
-      "status": "Hamstring"
     }
   ],
-  "league_ranks": {
-    "pts": 12,
-    "reb": 9,
-    "ast": 6
-  },
+  "league_ranks": {},
   "last5_averages": {}
 }
