@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-02 04:52",
+  "date": "2026-04-02 06:04",
   "all_games_today": [
     {
       "away_team": "76ers",
@@ -103,7 +103,7 @@
       "away_score": 127,
       "home_score": 113,
       "score": "127 - 113",
-      "status": "Final               ",
+      "status": "Final",
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
