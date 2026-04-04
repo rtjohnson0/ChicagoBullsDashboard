@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-03",
+  "date": "2026-04-04",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,46 +11,16 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Yabusele",
-      "position": "PF",
-      "injury": "Thu, Apr 2",
-      "status": "Ankle"
-    },
-    {
       "player": "Richards",
       "position": "C",
-      "injury": "Thu, Apr 2",
+      "injury": "Fri, Apr 3",
       "status": "Elbow"
     },
     {
       "player": "Simons",
       "position": "SG",
-      "injury": "Thu, Apr 2",
+      "injury": "Fri, Apr 3",
       "status": "Wrist"
-    },
-    {
-      "player": "Jones",
-      "position": "PG",
-      "injury": "Thu, Apr 2",
-      "status": "Ankle"
-    },
-    {
-      "player": "McClung",
-      "position": "PG",
-      "injury": "Thu, Apr 2",
-      "status": "Abdomen"
-    },
-    {
-      "player": "Giddey",
-      "position": "PG",
-      "injury": "Thu, Apr 2",
-      "status": "Hamstring"
-    },
-    {
-      "player": "Olbrich",
-      "position": "C",
-      "injury": "Thu, Apr 2",
-      "status": "Foot"
     }
   ],
   "league_ranks": {},
