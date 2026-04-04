@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-04 21:48",
+  "date": "2026-04-04 22:16",
   "all_games_today": [
-    {
-      "away_team": "Spurs",
-      "home_team": "Nuggets",
-      "away_score": 124,
-      "home_score": 124,
-      "score": "124 - 124",
-      "status": "END Q4",
-      "quarter": 4,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Wizards",
       "home_team": "Heat",
@@ -21,6 +9,18 @@
       "score": "136 - 152",
       "status": "Final",
       "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Spurs",
+      "home_team": "Nuggets",
+      "away_score": 134,
+      "home_score": 136,
+      "score": "134 - 136",
+      "status": "Final/OT",
+      "quarter": 5,
       "time_remaining": "",
       "is_live": true,
       "is_completed": false
