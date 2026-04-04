@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-04 04:26",
+  "date": "2026-04-04 05:42",
   "all_games_today": [
-    {
-      "away_team": "Pelicans",
-      "home_team": "Kings",
-      "away_score": 113,
-      "home_score": 115,
-      "score": "113 - 115",
-      "status": "Q4 :16.8",
-      "quarter": 4,
-      "time_remaining": "PT00M16.80S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Pacers",
       "home_team": "Hornets",
@@ -103,6 +91,18 @@
       "away_score": 138,
       "home_score": 127,
       "score": "138 - 127",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pelicans",
+      "home_team": "Kings",
+      "away_score": 113,
+      "home_score": 117,
+      "score": "113 - 117",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
