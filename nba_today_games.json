@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-04 23:49",
+  "date": "2026-04-05 01:11",
   "all_games_today": [
     {
       "away_team": "Pistons",
       "home_team": "76ers",
-      "away_score": 47,
-      "home_score": 45,
-      "score": "47 - 45",
-      "status": "Q2 8:09",
-      "quarter": 2,
-      "time_remaining": "PT08M09.00S",
+      "away_score": 104,
+      "home_score": 85,
+      "score": "104 - 85",
+      "status": "Q4 4:53",
+      "quarter": 4,
+      "time_remaining": "PT04M53.00S",
       "is_live": true,
       "is_completed": false
     },
