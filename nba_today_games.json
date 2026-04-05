@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-05 01:11",
+  "date": "2026-04-05 04:10",
   "all_games_today": [
-    {
-      "away_team": "Pistons",
-      "home_team": "76ers",
-      "away_score": 104,
-      "home_score": 85,
-      "score": "104 - 85",
-      "status": "Q4 4:53",
-      "quarter": 4,
-      "time_remaining": "PT04M53.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Wizards",
       "home_team": "Heat",
@@ -33,6 +21,18 @@
       "score": "134 - 136",
       "status": "Final/OT",
       "quarter": 5,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "76ers",
+      "away_score": 116,
+      "home_score": 93,
+      "score": "116 - 93",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
       "is_live": true,
       "is_completed": false
