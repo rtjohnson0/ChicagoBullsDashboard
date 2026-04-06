@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-06 13:53",
+  "date": "2026-04-06 14:39",
   "all_games_today": [
-    {
-      "away_team": "Lakers",
-      "home_team": "Mavericks",
-      "away_score": 128,
-      "home_score": 134,
-      "score": "128 - 134",
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Raptors",
       "home_team": "Celtics",
@@ -103,6 +91,18 @@
       "away_score": 111,
       "home_score": 146,
       "score": "111 - 146",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Mavericks",
+      "away_score": 128,
+      "home_score": 134,
+      "score": "128 - 134",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
