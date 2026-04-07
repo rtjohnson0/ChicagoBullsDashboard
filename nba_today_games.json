@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-07 03:31",
+  "date": "2026-04-07 05:28",
   "all_games_today": [
-    {
-      "away_team": "Trail Blazers",
-      "home_team": "Nuggets",
-      "away_score": 123,
-      "home_score": 125,
-      "score": "123 - 125",
-      "status": "Q4 :26.8",
-      "quarter": 4,
-      "time_remaining": "PT00M26.80S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Knicks",
       "home_team": "Hawks",
@@ -57,6 +45,18 @@
       "score": "102 - 115",
       "status": "Final",
       "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Trail Blazers",
+      "home_team": "Nuggets",
+      "away_score": 132,
+      "home_score": 137,
+      "score": "132 - 137",
+      "status": "Final/OT",
+      "quarter": 5,
       "time_remaining": "",
       "is_live": true,
       "is_completed": false
