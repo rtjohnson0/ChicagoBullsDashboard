@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-07",
+  "date": "2026-04-08",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,39 +11,33 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Sexton",
-      "position": "SG",
-      "injury": "Mon, Apr 6",
-      "status": "Finger"
-    },
-    {
       "player": "Richards",
       "position": "C",
-      "injury": "Mon, Apr 6",
+      "injury": "Tue, Apr 7",
       "status": "Elbow"
     },
     {
       "player": "Simons",
       "position": "SG",
-      "injury": "Mon, Apr 6",
+      "injury": "Tue, Apr 7",
       "status": "Wrist"
+    },
+    {
+      "player": "Okoro",
+      "position": "SF",
+      "injury": "Tue, Apr 7",
+      "status": "Quadriceps"
     },
     {
       "player": "Giddey",
       "position": "PG",
-      "injury": "Mon, Apr 6",
+      "injury": "Tue, Apr 7",
       "status": "Hamstring"
-    },
-    {
-      "player": "Olbrich",
-      "position": "C",
-      "injury": "Mon, Apr 6",
-      "status": "Foot"
     },
     {
       "player": "Buzelis",
       "position": "SF",
-      "injury": "Mon, Apr 6",
+      "injury": "Tue, Apr 7",
       "status": "Illness"
     }
   ],
