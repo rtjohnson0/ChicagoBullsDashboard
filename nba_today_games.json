@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-08 05:28",
+  "date": "2026-04-08 06:58",
   "all_games_today": [
-    {
-      "away_team": "Rockets",
-      "home_team": "Suns",
-      "away_score": 101,
-      "home_score": 92,
-      "score": "101 - 92",
-      "status": "Q4 6:24",
-      "quarter": 4,
-      "time_remaining": "PT06M24.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Bulls",
       "home_team": "Wizards",
@@ -115,6 +103,18 @@
       "away_score": 103,
       "home_score": 116,
       "score": "103 - 116",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Rockets",
+      "home_team": "Suns",
+      "away_score": 119,
+      "home_score": 105,
+      "score": "119 - 105",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
