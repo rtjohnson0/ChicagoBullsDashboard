@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-08 14:02",
+  "date": "2026-04-08 15:45",
   "all_games_today": [
     {
       "away_team": "Bulls",
@@ -112,9 +112,9 @@
     {
       "away_team": "Rockets",
       "home_team": "Suns",
-      "away_score": 119,
-      "home_score": 105,
-      "score": "119 - 105",
+      "away_score": 117,
+      "home_score": 103,
+      "score": "117 - 103",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
