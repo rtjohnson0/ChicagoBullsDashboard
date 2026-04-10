@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-10 04:18",
+  "date": "2026-04-10 06:10",
   "all_games_today": [
-    {
-      "away_team": "Lakers",
-      "home_team": "Warriors",
-      "away_score": 119,
-      "home_score": 103,
-      "score": "119 - 103",
-      "status": "Q4 :00.0",
-      "quarter": 4,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Heat",
       "home_team": "Raptors",
@@ -67,6 +55,18 @@
       "away_score": 102,
       "home_score": 113,
       "score": "102 - 113",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Lakers",
+      "home_team": "Warriors",
+      "away_score": 119,
+      "home_score": 103,
+      "score": "119 - 103",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
