@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-11 05:08",
+  "date": "2026-04-11 06:13",
   "all_games_today": [
     {
       "away_team": "Pistons",
@@ -175,7 +175,7 @@
       "away_score": 73,
       "home_score": 101,
       "score": "73 - 101",
-      "status": "Final               ",
+      "status": "Final",
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
