@@ -1,4 +1,185 @@
 {
-  "date": "2026-04-12 15:32",
-  "all_games_today": []
+  "date": "2026-04-12 16:03",
+  "all_games_today": [
+    {
+      "away_team": "Magic",
+      "home_team": "Celtics",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Wizards",
+      "home_team": "Cavaliers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pistons",
+      "home_team": "Pacers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Hawks",
+      "home_team": "Heat",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Hornets",
+      "home_team": "Knicks",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bucks",
+      "home_team": "76ers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Nets",
+      "home_team": "Raptors",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "6:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bulls",
+      "home_team": "Mavericks",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Grizzlies",
+      "home_team": "Rockets",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pelicans",
+      "home_team": "Timberwolves",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Suns",
+      "home_team": "Thunder",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Nuggets",
+      "home_team": "Spurs",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Jazz",
+      "home_team": "Lakers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Clippers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Kings",
+      "home_team": "Trail Blazers",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "8:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    }
+  ]
 }
