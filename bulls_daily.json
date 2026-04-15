@@ -1,6 +1,17 @@
 {
-  "date": "2026-04-14",
-  "bulls_season_stats": {},
+  "date": "2026-04-15",
+  "bulls_season_stats": {
+    "pts": 116.3,
+    "reb": 45.0,
+    "ast": 28.5,
+    "tov": 15.3,
+    "fgm": 42.4,
+    "fga": 90.5,
+    "fg3m": 14.3,
+    "fg3a": 40.1,
+    "ftm": 17.3,
+    "fta": 22.2
+  },
   "next_game": {
     "date": null,
     "opponent": null,
@@ -23,6 +34,10 @@
       "status": "Ankle"
     }
   ],
-  "league_ranks": {},
+  "league_ranks": {
+    "pts": 11,
+    "reb": 9,
+    "ast": 7
+  },
   "last5_averages": {}
 }
