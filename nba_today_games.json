@@ -1,28 +1,28 @@
 {
-  "date": "2026-04-15 00:00",
+  "date": "2026-04-15 02:37",
   "all_games_today": [
     {
-      "away_team": "Heat",
-      "home_team": "Hornets",
-      "away_score": 18,
-      "home_score": 22,
-      "score": "18 - 22",
-      "status": "Q1 4:50",
+      "away_team": "Trail Blazers",
+      "home_team": "Suns",
+      "away_score": 19,
+      "home_score": 24,
+      "score": "19 - 24",
+      "status": "Q1 3:25",
       "quarter": 1,
-      "time_remaining": "PT04M50.00S",
+      "time_remaining": "PT03M25.00S",
       "is_live": true,
       "is_completed": false
     },
     {
-      "away_team": "Trail Blazers",
-      "home_team": "Suns",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "10:00 pm ET",
-      "quarter": 0,
+      "away_team": "Heat",
+      "home_team": "Hornets",
+      "away_score": 126,
+      "home_score": 127,
+      "score": "126 - 127",
+      "status": "Final/OT",
+      "quarter": 5,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     }
   ]
