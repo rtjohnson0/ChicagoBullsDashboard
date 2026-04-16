@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-16 03:47",
+  "date": "2026-04-16 05:54",
   "all_games_today": [
-    {
-      "away_team": "Warriors",
-      "home_team": "Clippers",
-      "away_score": 62,
-      "home_score": 72,
-      "score": "62 - 72",
-      "status": "Q3 7:48",
-      "quarter": 3,
-      "time_remaining": "PT07M48.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Magic",
       "home_team": "76ers",
       "away_score": 97,
       "home_score": 109,
       "score": "97 - 109",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Clippers",
+      "away_score": 126,
+      "home_score": 121,
+      "score": "126 - 121",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
