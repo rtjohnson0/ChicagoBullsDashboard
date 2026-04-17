@@ -1,4 +1,29 @@
 {
-  "date": "2026-04-17 15:46",
-  "all_games_today": []
+  "date": "2026-04-17 16:40",
+  "all_games_today": [
+    {
+      "away_team": "Hornets",
+      "home_team": "Magic",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "7:30 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Suns",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "10:00 pm ET",
+      "quarter": 0,
+      "time_remaining": "",
+      "is_live": false,
+      "is_completed": false
+    }
+  ]
 }
