@@ -1,16 +1,16 @@
 {
-  "date": "2026-04-17 23:02",
+  "date": "2026-04-17 23:56",
   "all_games_today": [
     {
       "away_team": "Hornets",
       "home_team": "Magic",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:30 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 10,
+      "home_score": 22,
+      "score": "10 - 22",
+      "status": "Q1 4:35",
+      "quarter": 1,
+      "time_remaining": "PT04M35.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
