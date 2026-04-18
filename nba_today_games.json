@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-18 22:01",
+  "date": "2026-04-18 22:55",
   "all_games_today": [
     {
-      "away_team": "Timberwolves",
-      "home_team": "Nuggets",
-      "away_score": 99,
-      "home_score": 106,
-      "score": "99 - 106",
-      "status": "Q4 3:17",
-      "quarter": 4,
-      "time_remaining": "PT03M17.00S",
+      "away_team": "Hawks",
+      "home_team": "Knicks",
+      "away_score": 36,
+      "home_score": 42,
+      "score": "36 - 42",
+      "status": "Q2 7:48",
+      "quarter": 2,
+      "time_remaining": "PT07M48.00S",
       "is_live": true,
       "is_completed": false
     },
@@ -26,15 +26,15 @@
       "is_completed": false
     },
     {
-      "away_team": "Hawks",
-      "home_team": "Knicks",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "6:00 pm ET",
-      "quarter": 0,
+      "away_team": "Timberwolves",
+      "home_team": "Nuggets",
+      "away_score": 105,
+      "home_score": 116,
+      "score": "105 - 116",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     },
     {
