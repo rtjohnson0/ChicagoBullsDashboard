@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-18 18:29",
+  "date": "2026-04-18 19:26",
   "all_games_today": [
     {
       "away_team": "Raptors",
       "home_team": "Cavaliers",
-      "away_score": 54,
-      "home_score": 61,
-      "score": "54 - 61",
-      "status": "Half",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
+      "away_score": 95,
+      "home_score": 113,
+      "score": "95 - 113",
+      "status": "Q4 6:16",
+      "quarter": 4,
+      "time_remaining": "PT06M16.00S",
       "is_live": true,
       "is_completed": false
     },
