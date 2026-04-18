@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-18 20:54",
+  "date": "2026-04-18 21:23",
   "all_games_today": [
     {
       "away_team": "Timberwolves",
       "home_team": "Nuggets",
-      "away_score": 62,
-      "home_score": 62,
-      "score": "62 - 62",
-      "status": "Half",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
+      "away_score": 70,
+      "home_score": 82,
+      "score": "70 - 82",
+      "status": "Q3 3:53",
+      "quarter": 3,
+      "time_remaining": "PT03M53.00S",
       "is_live": true,
       "is_completed": false
     },
