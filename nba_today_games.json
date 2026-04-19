@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-19 20:54",
+  "date": "2026-04-19 21:23",
   "all_games_today": [
     {
       "away_team": "Suns",
       "home_team": "Thunder",
-      "away_score": 44,
-      "home_score": 63,
-      "score": "44 - 63",
-      "status": "Q2 :10.1",
-      "quarter": 2,
-      "time_remaining": "PT00M10.10S",
+      "away_score": 56,
+      "home_score": 72,
+      "score": "56 - 72",
+      "status": "Q3 7:43",
+      "quarter": 3,
+      "time_remaining": "PT07M43.00S",
       "is_live": true,
       "is_completed": false
     },
