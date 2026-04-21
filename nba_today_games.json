@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-21 03:45",
+  "date": "2026-04-21 05:56",
   "all_games_today": [
-    {
-      "away_team": "Timberwolves",
-      "home_team": "Nuggets",
-      "away_score": 52,
-      "home_score": 50,
-      "score": "52 - 50",
-      "status": "Q2 5:01",
-      "quarter": 2,
-      "time_remaining": "PT05M01.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Raptors",
       "home_team": "Cavaliers",
@@ -31,6 +19,18 @@
       "away_score": 107,
       "home_score": 106,
       "score": "107 - 106",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Timberwolves",
+      "home_team": "Nuggets",
+      "away_score": 119,
+      "home_score": 114,
+      "score": "119 - 114",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
