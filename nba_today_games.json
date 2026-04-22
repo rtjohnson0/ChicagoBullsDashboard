@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-22 04:19",
+  "date": "2026-04-22 06:12",
   "all_games_today": [
-    {
-      "away_team": "Rockets",
-      "home_team": "Lakers",
-      "away_score": 60,
-      "home_score": 67,
-      "score": "60 - 67",
-      "status": "Q3 6:09",
-      "quarter": 3,
-      "time_remaining": "PT06M09.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "76ers",
       "home_team": "Celtics",
@@ -31,6 +19,18 @@
       "away_score": 106,
       "home_score": 103,
       "score": "106 - 103",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Rockets",
+      "home_team": "Lakers",
+      "away_score": 94,
+      "home_score": 101,
+      "score": "94 - 101",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
