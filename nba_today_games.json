@@ -1,40 +1,28 @@
 {
-  "date": "2026-04-22 15:52",
+  "date": "2026-04-22 16:46",
   "all_games_today": [
     {
-      "away_team": "76ers",
-      "home_team": "Celtics",
-      "away_score": 111,
-      "home_score": 97,
-      "score": "111 - 97",
-      "status": "Final",
-      "quarter": 4,
+      "away_team": "Magic",
+      "home_team": "Pistons",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "7:00 pm ET",
+      "quarter": 0,
       "time_remaining": "",
-      "is_live": true,
+      "is_live": false,
       "is_completed": false
     },
     {
-      "away_team": "Trail Blazers",
-      "home_team": "Spurs",
-      "away_score": 106,
-      "home_score": 103,
-      "score": "106 - 103",
-      "status": "Final",
-      "quarter": 4,
+      "away_team": "Suns",
+      "home_team": "Thunder",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "9:30 pm ET",
+      "quarter": 0,
       "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Rockets",
-      "home_team": "Lakers",
-      "away_score": 94,
-      "home_score": 101,
-      "score": "94 - 101",
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
+      "is_live": false,
       "is_completed": false
     }
   ]
