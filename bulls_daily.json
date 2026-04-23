@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-22",
+  "date": "2026-04-23",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,16 +11,10 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Okoro",
-      "position": "SF",
-      "injury": "Sat, Apr 11",
-      "status": "Quadriceps"
-    },
-    {
-      "player": "Buzelis",
-      "position": "SF",
-      "injury": "Sat, Apr 11",
-      "status": "Ankle"
+      "player": "Dillingham",
+      "position": "PG",
+      "injury": "Thu, Apr 23",
+      "status": "Wrist"
     }
   ],
   "league_ranks": {},
