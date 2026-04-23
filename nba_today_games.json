@@ -1,24 +1,24 @@
 {
-  "date": "2026-04-23 04:21",
+  "date": "2026-04-23 06:26",
   "all_games_today": [
-    {
-      "away_team": "Suns",
-      "home_team": "Thunder",
-      "away_score": 107,
-      "home_score": 120,
-      "score": "107 - 120",
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "PT00M00.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "Magic",
       "home_team": "Pistons",
       "away_score": 83,
       "home_score": 98,
       "score": "83 - 98",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Suns",
+      "home_team": "Thunder",
+      "away_score": 107,
+      "home_score": 120,
+      "score": "107 - 120",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
