@@ -1,28 +1,28 @@
 {
-  "date": "2026-04-23 23:27",
+  "date": "2026-04-24 01:10",
   "all_games_today": [
     {
       "away_team": "Knicks",
       "home_team": "Hawks",
-      "away_score": 9,
-      "home_score": 13,
-      "score": "9 - 13",
-      "status": "Q1 5:36",
-      "quarter": 1,
-      "time_remaining": "PT05M36.00S",
+      "away_score": 80,
+      "home_score": 88,
+      "score": "80 - 88",
+      "status": "Q4 11:20",
+      "quarter": 4,
+      "time_remaining": "PT11M20.00S",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Cavaliers",
       "home_team": "Raptors",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "8:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 49,
+      "home_score": 51,
+      "score": "49 - 51",
+      "status": "Q2 1:41",
+      "quarter": 2,
+      "time_remaining": "PT01M41.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
