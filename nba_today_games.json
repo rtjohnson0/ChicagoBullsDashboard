@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-25 17:57",
+  "date": "2026-04-25 18:39",
   "all_games_today": [
     {
       "away_team": "Pistons",
       "home_team": "Magic",
-      "away_score": 43,
-      "home_score": 48,
-      "score": "43 - 48",
-      "status": "Q2 4:44",
-      "quarter": 2,
-      "time_remaining": "PT04M44.00S",
+      "away_score": 60,
+      "home_score": 71,
+      "score": "60 - 71",
+      "status": "Q3 9:08",
+      "quarter": 3,
+      "time_remaining": "PT09M08.00S",
       "is_live": true,
       "is_completed": false
     },
