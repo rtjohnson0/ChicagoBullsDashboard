@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-24 23:37",
+  "date": "2026-04-25 00:08",
   "all_games_today": [
     {
       "away_team": "Celtics",
       "home_team": "76ers",
-      "away_score": 26,
-      "home_score": 20,
-      "score": "26 - 20",
-      "status": "Q1 :47.8",
-      "quarter": 1,
-      "time_remaining": "PT00M47.80S",
+      "away_score": 45,
+      "home_score": 40,
+      "score": "45 - 40",
+      "status": "Q2 3:39",
+      "quarter": 2,
+      "time_remaining": "PT03M39.00S",
       "is_live": true,
       "is_completed": false
     },
