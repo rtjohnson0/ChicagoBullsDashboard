@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-25 22:57",
+  "date": "2026-04-25 23:31",
   "all_games_today": [
     {
       "away_team": "Knicks",
       "home_team": "Hawks",
-      "away_score": 38,
-      "home_score": 29,
-      "score": "38 - 29",
-      "status": "Q2 7:22",
+      "away_score": 58,
+      "home_score": 44,
+      "score": "58 - 44",
+      "status": "Half",
       "quarter": 2,
-      "time_remaining": "PT07M22.00S",
+      "time_remaining": "PT00M00.00S",
       "is_live": true,
       "is_completed": false
     },
