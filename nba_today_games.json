@@ -1,40 +1,40 @@
 {
-  "date": "2026-04-25 00:08",
+  "date": "2026-04-25 03:32",
   "all_games_today": [
+    {
+      "away_team": "Spurs",
+      "home_team": "Trail Blazers",
+      "away_score": 41,
+      "home_score": 40,
+      "score": "41 - 40",
+      "status": "Q2 7:31",
+      "quarter": 2,
+      "time_remaining": "PT07M31.00S",
+      "is_live": true,
+      "is_completed": false
+    },
     {
       "away_team": "Celtics",
       "home_team": "76ers",
-      "away_score": 45,
-      "home_score": 40,
-      "score": "45 - 40",
-      "status": "Q2 3:39",
-      "quarter": 2,
-      "time_remaining": "PT03M39.00S",
+      "away_score": 108,
+      "home_score": 100,
+      "score": "108 - 100",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Lakers",
       "home_team": "Rockets",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "8:00 pm ET",
-      "quarter": 0,
+      "away_score": 112,
+      "home_score": 108,
+      "score": "112 - 108",
+      "status": "Final/OT",
+      "quarter": 5,
       "time_remaining": "",
-      "is_live": false,
-      "is_completed": false
-    },
-    {
-      "away_team": "Spurs",
-      "home_team": "Trail Blazers",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "10:30 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     }
   ]
