@@ -1,15 +1,15 @@
 {
-  "date": "2026-04-26 20:57",
+  "date": "2026-04-26 21:33",
   "all_games_today": [
     {
       "away_team": "Spurs",
       "home_team": "Trail Blazers",
-      "away_score": 41,
-      "home_score": 58,
-      "score": "41 - 58",
-      "status": "Half",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
+      "away_score": 67,
+      "home_score": 69,
+      "score": "67 - 69",
+      "status": "Q3 1:30",
+      "quarter": 3,
+      "time_remaining": "PT01M30.00S",
       "is_live": true,
       "is_completed": false
     },
