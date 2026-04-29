@@ -1,18 +1,6 @@
 {
-  "date": "2026-04-29 04:03",
+  "date": "2026-04-29 06:38",
   "all_games_today": [
-    {
-      "away_team": "Trail Blazers",
-      "home_team": "Spurs",
-      "away_score": 82,
-      "home_score": 95,
-      "score": "82 - 95",
-      "status": "Q4 6:22",
-      "quarter": 4,
-      "time_remaining": "PT06M22.00S",
-      "is_live": true,
-      "is_completed": false
-    },
     {
       "away_team": "76ers",
       "home_team": "Celtics",
@@ -31,6 +19,18 @@
       "away_score": 97,
       "home_score": 126,
       "score": "97 - 126",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Trail Blazers",
+      "home_team": "Spurs",
+      "away_score": 95,
+      "home_score": 114,
+      "score": "95 - 114",
       "status": "Final",
       "quarter": 4,
       "time_remaining": "",
