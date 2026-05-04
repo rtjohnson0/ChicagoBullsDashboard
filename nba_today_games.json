@@ -1,29 +1,4 @@
 {
-  "date": "2026-05-04 13:11",
-  "all_games_today": [
-    {
-      "away_team": "Magic",
-      "home_team": "Pistons",
-      "away_score": 94,
-      "home_score": 116,
-      "score": "94 - 116",
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Raptors",
-      "home_team": "Cavaliers",
-      "away_score": 102,
-      "home_score": 114,
-      "score": "102 - 114",
-      "status": "Final",
-      "quarter": 4,
-      "time_remaining": "",
-      "is_live": true,
-      "is_completed": false
-    }
-  ]
+  "date": "2026-05-04 15:21",
+  "all_games_today": []
 }
