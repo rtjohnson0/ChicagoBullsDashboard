@@ -1,28 +1,28 @@
 {
-  "date": "2026-05-06 15:51",
+  "date": "2026-05-06 17:18",
   "all_games_today": [
     {
-      "away_team": "Cavaliers",
-      "home_team": "Pistons",
-      "away_score": 101,
-      "home_score": 111,
-      "score": "101 - 111",
-      "status": "Final",
-      "quarter": 4,
+      "away_team": "76ers",
+      "home_team": "Knicks",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "7:00 pm ET",
+      "quarter": 0,
       "time_remaining": "",
-      "is_live": true,
+      "is_live": false,
       "is_completed": false
     },
     {
-      "away_team": "Lakers",
-      "home_team": "Thunder",
-      "away_score": 90,
-      "home_score": 108,
-      "score": "90 - 108",
-      "status": "Final",
-      "quarter": 4,
+      "away_team": "Timberwolves",
+      "home_team": "Spurs",
+      "away_score": 0,
+      "home_score": 0,
+      "score": "N/A",
+      "status": "9:30 pm ET",
+      "quarter": 0,
       "time_remaining": "",
-      "is_live": true,
+      "is_live": false,
       "is_completed": false
     }
   ]
