@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-08 01:46",
+  "date": "2026-05-08 04:45",
   "all_games_today": [
     {
       "away_team": "Cavaliers",
@@ -9,19 +9,19 @@
       "score": "97 - 107",
       "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT00M00.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Lakers",
       "home_team": "Thunder",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "Q1 11:37",
-      "quarter": 1,
-      "time_remaining": "PT11M37.00S",
+      "away_score": 107,
+      "home_score": 125,
+      "score": "107 - 125",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
