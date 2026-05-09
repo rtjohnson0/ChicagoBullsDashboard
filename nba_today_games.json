@@ -1,15 +1,15 @@
 {
-  "date": "2026-05-09 20:10",
+  "date": "2026-05-09 21:03",
   "all_games_today": [
     {
       "away_team": "Pistons",
       "home_team": "Cavaliers",
-      "away_score": 40,
-      "home_score": 45,
-      "score": "40 - 45",
-      "status": "Q2 4:35",
-      "quarter": 2,
-      "time_remaining": "PT04M35.00S",
+      "away_score": 69,
+      "home_score": 74,
+      "score": "69 - 74",
+      "status": "Q3 4:04",
+      "quarter": 3,
+      "time_remaining": "PT04M04.00S",
       "is_live": true,
       "is_completed": false
     },
