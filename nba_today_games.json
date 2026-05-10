@@ -1,15 +1,15 @@
 {
-  "date": "2026-05-10 20:34",
+  "date": "2026-05-10 21:28",
   "all_games_today": [
     {
       "away_team": "Knicks",
       "home_team": "76ers",
-      "away_score": 66,
-      "home_score": 43,
-      "score": "66 - 43",
-      "status": "Q2 3:26",
-      "quarter": 2,
-      "time_remaining": "PT03M26.00S",
+      "away_score": 109,
+      "home_score": 75,
+      "score": "109 - 75",
+      "status": "Q3 2:53",
+      "quarter": 3,
+      "time_remaining": "PT02M53.00S",
       "is_live": true,
       "is_completed": false
     },
