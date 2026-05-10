@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-10 00:04",
+  "date": "2026-05-10 04:15",
   "all_games_today": [
     {
       "away_team": "Pistons",
@@ -16,13 +16,13 @@
     {
       "away_team": "Thunder",
       "home_team": "Lakers",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "8:30 pm ET",
-      "quarter": 0,
+      "away_score": 131,
+      "home_score": 108,
+      "score": "131 - 108",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     }
   ]
