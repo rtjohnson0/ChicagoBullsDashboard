@@ -1,6 +1,18 @@
 {
-  "date": "2026-05-10 23:31",
+  "date": "2026-05-11 01:26",
   "all_games_today": [
+    {
+      "away_team": "Spurs",
+      "home_team": "Timberwolves",
+      "away_score": 76,
+      "home_score": 70,
+      "score": "76 - 70",
+      "status": "Q3 3:56",
+      "quarter": 3,
+      "time_remaining": "PT03M56.00S",
+      "is_live": true,
+      "is_completed": false
+    },
     {
       "away_team": "Knicks",
       "home_team": "76ers",
@@ -11,18 +23,6 @@
       "quarter": 4,
       "time_remaining": "",
       "is_live": true,
-      "is_completed": false
-    },
-    {
-      "away_team": "Spurs",
-      "home_team": "Timberwolves",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "7:30 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
       "is_completed": false
     }
   ]
