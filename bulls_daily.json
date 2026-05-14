@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-13",
+  "date": "2026-05-14",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,10 +11,10 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Dillingham",
+      "player": "Giddey",
       "position": "PG",
-      "injury": "Thu, Apr 23",
-      "status": "Wrist"
+      "injury": "Wed, May 13",
+      "status": "Ankle"
     }
   ],
   "league_ranks": {},
