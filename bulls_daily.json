@@ -1,5 +1,5 @@
 {
-  "date": "2026-06-15",
+  "date": "2026-06-16",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,10 +11,64 @@
   "win_explanation": "",
   "injuries": [
     {
+      "player": "Yabusele",
+      "position": "PF",
+      "injury": "Tue, Jun 16",
+      "status": "Shoulder"
+    },
+    {
+      "player": "Collins",
+      "position": "C",
+      "injury": "Tue, Jun 16",
+      "status": "Toe"
+    },
+    {
+      "player": "Richards",
+      "position": "C",
+      "injury": "Tue, Jun 16",
+      "status": "Elbow"
+    },
+    {
+      "player": "Simons",
+      "position": "SG",
+      "injury": "Tue, Jun 16",
+      "status": "Wrist"
+    },
+    {
+      "player": "Smith",
+      "position": "PF",
+      "injury": "Tue, Jun 16",
+      "status": "Calf"
+    },
+    {
+      "player": "Okoro",
+      "position": "SF",
+      "injury": "Tue, Jun 16",
+      "status": "Quadriceps"
+    },
+    {
       "player": "Giddey",
       "position": "PG",
-      "injury": "Wed, May 13",
+      "injury": "Tue, Jun 16",
       "status": "Ankle"
+    },
+    {
+      "player": "Dillingham",
+      "position": "PG",
+      "injury": "Tue, Jun 16",
+      "status": "Wrist"
+    },
+    {
+      "player": "Buzelis",
+      "position": "SF",
+      "injury": "Tue, Jun 16",
+      "status": "Ankle"
+    },
+    {
+      "player": "Essengue",
+      "position": "PF",
+      "injury": "Tue, Jun 16",
+      "status": "Shoulder"
     }
   ],
   "league_ranks": {},
