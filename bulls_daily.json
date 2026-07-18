@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-18",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,46 +11,22 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Collins",
-      "position": "C",
-      "injury": "Tue, Jun 16",
-      "status": "Toe"
-    },
-    {
-      "player": "Claxton",
-      "position": "C",
-      "injury": "Tue, Jun 16",
-      "status": "Finger"
-    },
-    {
-      "player": "Richards",
-      "position": "C",
-      "injury": "Tue, Jun 16",
-      "status": "Elbow"
-    },
-    {
-      "player": "Smith",
-      "position": "PF",
-      "injury": "Tue, Jun 16",
-      "status": "Calf"
-    },
-    {
-      "player": "Okoro",
+      "player": "Swain",
       "position": "SF",
-      "injury": "Tue, Jun 16",
-      "status": "Quadriceps"
-    },
-    {
-      "player": "Giddey",
-      "position": "PG",
-      "injury": "Tue, Jun 16",
-      "status": "Ankle"
-    },
-    {
-      "player": "Dillingham",
-      "position": "PG",
-      "injury": "Tue, Jun 16",
+      "injury": "Fri, Jul 17",
       "status": "Wrist"
+    },
+    {
+      "player": "Wilson",
+      "position": "PF",
+      "injury": "Fri, Jul 17",
+      "status": "Rest"
+    },
+    {
+      "player": "Essengue",
+      "position": "PF",
+      "injury": "Fri, Jul 17",
+      "status": "Thumb"
     }
   ],
   "league_ranks": {},
