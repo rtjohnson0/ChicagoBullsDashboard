@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-07",
+  "date": "2026-08-08",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -15,12 +15,6 @@
       "position": "SF",
       "injury": "Fri, Jul 17",
       "status": "Wrist"
-    },
-    {
-      "player": "Essengue",
-      "position": "PF",
-      "injury": "Fri, Jul 17",
-      "status": "Thumb"
     }
   ],
   "league_ranks": {},
