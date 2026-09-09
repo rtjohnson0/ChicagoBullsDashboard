@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-08",
+  "date": "2026-09-09",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,9 +11,27 @@
   "win_explanation": "",
   "injuries": [
     {
+      "player": "Collins",
+      "position": "C",
+      "injury": "Tue, Sep 8",
+      "status": "Toe"
+    },
+    {
+      "player": "Giddey",
+      "position": "PG",
+      "injury": "Tue, Sep 8",
+      "status": "Ankle"
+    },
+    {
+      "player": "Dillingham",
+      "position": "PG",
+      "injury": "Tue, Sep 8",
+      "status": "Wrist"
+    },
+    {
       "player": "Swain",
       "position": "SF",
-      "injury": "Fri, Jul 17",
+      "injury": "Tue, Sep 8",
       "status": "Wrist"
     }
   ],
