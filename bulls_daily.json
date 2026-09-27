@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-26",
+  "date": "2026-09-27",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -21,12 +21,6 @@
       "position": "PG",
       "injury": "Tue, Sep 8",
       "status": "Ankle"
-    },
-    {
-      "player": "Dillingham",
-      "position": "PG",
-      "injury": "Tue, Sep 8",
-      "status": "Wrist"
     },
     {
       "player": "Swain",
