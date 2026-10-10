@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-10",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -13,20 +13,32 @@
     {
       "player": "Collins",
       "position": "C",
-      "injury": "Wed, Oct 7",
+      "injury": "Fri, Oct 9",
       "status": "Toe"
     },
     {
       "player": "Jones",
       "position": "PG",
-      "injury": "Wed, Oct 7",
+      "injury": "Fri, Oct 9",
       "status": "Hip"
+    },
+    {
+      "player": "Smith",
+      "position": "PF",
+      "injury": "Fri, Oct 9",
+      "status": "Foot"
     },
     {
       "player": "Sellers",
       "position": "SG",
-      "injury": "Wed, Oct 7",
+      "injury": "Fri, Oct 9",
       "status": "Back"
+    },
+    {
+      "player": "Buzelis",
+      "position": "SF",
+      "injury": "Fri, Oct 9",
+      "status": "Ankle"
     }
   ],
   "league_ranks": {},
