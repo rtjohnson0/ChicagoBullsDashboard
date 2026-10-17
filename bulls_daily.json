@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,9 +11,15 @@
   "win_explanation": "",
   "injuries": [
     {
+      "player": "Collins",
+      "position": "C",
+      "injury": "Fri, Oct 16",
+      "status": "Toe"
+    },
+    {
       "player": "Okoro",
       "position": "SF",
-      "injury": "Wed, Oct 14",
+      "injury": "Fri, Oct 16",
       "status": "Undisclosed"
     }
   ],
