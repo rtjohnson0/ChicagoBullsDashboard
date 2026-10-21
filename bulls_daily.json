@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20",
+  "date": "2026-10-21",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,10 +11,22 @@
   "win_explanation": "",
   "injuries": [
     {
+      "player": "Okoro",
+      "position": "SF",
+      "injury": "Tue, Oct 20",
+      "status": "Knee"
+    },
+    {
       "player": "Hawkins",
       "position": "SG",
       "injury": "Tue, Oct 20",
       "status": "Illness"
+    },
+    {
+      "player": "Miller",
+      "position": "SF",
+      "injury": "Tue, Oct 20",
+      "status": "Groin"
     },
     {
       "player": "Swain",
