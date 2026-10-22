@@ -1,4 +1,137 @@
 {
-  "date": "2026-10-22 02:05",
-  "all_games_today": []
+  "date": "2026-10-22 07:35",
+  "all_games_today": [
+    {
+      "away_team": "Hawks",
+      "home_team": "Magic",
+      "away_score": 132,
+      "home_score": 125,
+      "score": "132 - 125",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bucks",
+      "home_team": "Wizards",
+      "away_score": 116,
+      "home_score": 128,
+      "score": "116 - 128",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Timberwolves",
+      "home_team": "Heat",
+      "away_score": 131,
+      "home_score": 106,
+      "score": "131 - 106",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Hornets",
+      "home_team": "Nets",
+      "away_score": 110,
+      "home_score": 103,
+      "score": "110 - 103",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Bulls",
+      "home_team": "Raptors",
+      "away_score": 92,
+      "home_score": 135,
+      "score": "92 - 135",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Jazz",
+      "home_team": "Grizzlies",
+      "away_score": 103,
+      "home_score": 123,
+      "score": "103 - 123",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Pacers",
+      "home_team": "Pelicans",
+      "away_score": 123,
+      "home_score": 120,
+      "score": "123 - 120",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Mavericks",
+      "home_team": "Rockets",
+      "away_score": 110,
+      "home_score": 128,
+      "score": "110 - 128",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Warriors",
+      "home_team": "Lakers",
+      "away_score": 105,
+      "home_score": 127,
+      "score": "105 - 127",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Suns",
+      "home_team": "Trail Blazers",
+      "away_score": 83,
+      "home_score": 124,
+      "score": "83 - 124",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    },
+    {
+      "away_team": "Kings",
+      "home_team": "Clippers",
+      "away_score": 96,
+      "home_score": 121,
+      "score": "96 - 121",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
+      "is_live": true,
+      "is_completed": false
+    }
+  ]
 }
