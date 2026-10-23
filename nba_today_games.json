@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-23 17:59",
+  "date": "2026-10-23 20:58",
   "all_games_today": [
     {
       "away_team": "Bulls",
       "home_team": "Bucks",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "4:00 pm ET",
-      "quarter": 0,
-      "time_remaining": "",
-      "is_live": false,
+      "away_score": 26,
+      "home_score": 36,
+      "score": "26 - 36",
+      "status": "2nd Qtr             ",
+      "quarter": 2,
+      "time_remaining": "PT00M12.00S",
+      "is_live": true,
       "is_completed": false
     },
     {
