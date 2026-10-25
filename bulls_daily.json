@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,10 +11,16 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Claxton",
-      "position": "C",
-      "injury": "Mon, Oct 19",
-      "status": "Hamstring"
+      "player": "Essengue",
+      "position": "PF",
+      "injury": "Sun, Oct 25",
+      "status": "Head"
+    },
+    {
+      "player": "Williams",
+      "position": "PF",
+      "injury": "Sun, Oct 25",
+      "status": "Groin"
     }
   ],
   "league_ranks": {},
