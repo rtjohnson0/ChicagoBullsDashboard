@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,15 +11,9 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Essengue",
-      "position": "PF",
-      "injury": "Sun, Oct 25",
-      "status": "Head"
-    },
-    {
       "player": "Williams",
       "position": "PF",
-      "injury": "Sun, Oct 25",
+      "injury": "Mon, Oct 26",
       "status": "Groin"
     }
   ],
