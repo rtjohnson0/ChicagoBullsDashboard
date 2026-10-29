@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -13,7 +13,7 @@
     {
       "player": "Williams",
       "position": "PF",
-      "injury": "Mon, Oct 26",
+      "injury": "Thu, Oct 29",
       "status": "Groin"
     }
   ],
