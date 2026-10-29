@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-29 03:03",
+  "date": "2026-10-29 09:58",
   "all_games_today": [
     {
       "away_team": "Heat",
@@ -112,36 +112,36 @@
     {
       "away_team": "Spurs",
       "home_team": "Jazz",
-      "away_score": 91,
-      "home_score": 88,
-      "score": "91 - 88",
-      "status": "4th Qtr             ",
-      "quarter": 4,
-      "time_remaining": "PT09M34.00S",
+      "away_score": 117,
+      "home_score": 111,
+      "score": "117 - 111",
+      "status": "Final/OT",
+      "quarter": 5,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Thunder",
       "home_team": "Mavericks",
-      "away_score": 59,
-      "home_score": 65,
-      "score": "59 - 65",
-      "status": "Halftime            ",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
+      "away_score": 96,
+      "home_score": 120,
+      "score": "96 - 120",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Lakers",
       "home_team": "Clippers",
-      "away_score": 14,
-      "home_score": 19,
-      "score": "14 - 19",
-      "status": "1st Qtr             ",
-      "quarter": 1,
-      "time_remaining": "PT02M54.00S",
+      "away_score": 103,
+      "home_score": 87,
+      "score": "103 - 87",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
