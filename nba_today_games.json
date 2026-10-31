@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-31 18:53",
+  "date": "2026-10-31 21:58",
   "all_games_today": [
     {
       "away_team": "Trail Blazers",
       "home_team": "Jazz",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "3:00 pm ET",
-      "quarter": 0,
+      "away_score": 112,
+      "home_score": 90,
+      "score": "112 - 90",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     },
     {
