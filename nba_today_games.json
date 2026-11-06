@@ -1,28 +1,28 @@
 {
-  "date": "2026-11-06 02:46",
+  "date": "2026-11-06 09:59",
   "all_games_today": [
     {
       "away_team": "Magic",
       "home_team": "Suns",
-      "away_score": 26,
-      "home_score": 37,
-      "score": "26 - 37",
-      "status": "2nd Qtr             ",
-      "quarter": 2,
-      "time_remaining": "PT11M008.00S",
+      "away_score": 104,
+      "home_score": 117,
+      "score": "104 - 117",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Heat",
       "home_team": "Warriors",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "10:00 pm ET",
-      "quarter": 0,
+      "away_score": 100,
+      "home_score": 120,
+      "score": "100 - 120",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     }
   ]
