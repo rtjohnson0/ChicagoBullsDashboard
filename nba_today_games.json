@@ -1,16 +1,16 @@
 {
-  "date": "2026-11-08 19:41",
+  "date": "2026-11-08 23:14",
   "all_games_today": [
     {
       "away_team": "76ers",
       "home_team": "Bulls",
-      "away_score": 0,
-      "home_score": 0,
-      "score": "N/A",
-      "status": "3:30 pm ET",
-      "quarter": 0,
+      "away_score": 127,
+      "home_score": 121,
+      "score": "127 - 121",
+      "status": "Final",
+      "quarter": 4,
       "time_remaining": "",
-      "is_live": false,
+      "is_live": true,
       "is_completed": false
     },
     {
