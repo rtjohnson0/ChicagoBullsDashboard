@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-13 02:51",
+  "date": "2026-11-13 10:09",
   "all_games_today": [
     {
       "away_team": "Raptors",
@@ -16,36 +16,36 @@
     {
       "away_team": "Pistons",
       "home_team": "Wizards",
-      "away_score": 133,
-      "home_score": 130,
-      "score": "133 - 130",
-      "status": "1st OT              ",
-      "quarter": 5,
-      "time_remaining": "PT00M009.00S",
+      "away_score": 144,
+      "home_score": 140,
+      "score": "144 - 140",
+      "status": "Final/OT2",
+      "quarter": 6,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Mavericks",
       "home_team": "Timberwolves",
-      "away_score": 72,
-      "home_score": 106,
-      "score": "72 - 106",
-      "status": "4th Qtr             ",
+      "away_score": 94,
+      "home_score": 133,
+      "score": "94 - 133",
+      "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT11M004.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Hornets",
       "home_team": "Suns",
-      "away_score": 27,
-      "home_score": 33,
-      "score": "27 - 33",
-      "status": "2nd Qtr             ",
-      "quarter": 2,
-      "time_remaining": "PT10M48.00S",
+      "away_score": 96,
+      "home_score": 101,
+      "score": "96 - 101",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
