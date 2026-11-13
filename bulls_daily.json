@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -15,6 +15,12 @@
       "position": "SG",
       "injury": "Thu, Nov 12",
       "status": "Shoulder"
+    },
+    {
+      "player": "Wilson",
+      "position": "PF",
+      "injury": "Thu, Nov 12",
+      "status": "Hand"
     },
     {
       "player": "Swain",
