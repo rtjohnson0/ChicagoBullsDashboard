@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -13,20 +13,20 @@
     {
       "player": "Powell",
       "position": "SG",
-      "injury": "Thu, Nov 12",
-      "status": "Shoulder"
-    },
-    {
-      "player": "Wilson",
-      "position": "PF",
-      "injury": "Thu, Nov 12",
-      "status": "Hand"
-    },
-    {
-      "player": "Swain",
-      "position": "SF",
-      "injury": "Thu, Nov 12",
+      "injury": "Sat, Nov 14",
       "status": "Back"
+    },
+    {
+      "player": "Claxton",
+      "position": "C",
+      "injury": "Sat, Nov 14",
+      "status": "Hamstring"
+    },
+    {
+      "player": "Smith",
+      "position": "C",
+      "injury": "Sat, Nov 14",
+      "status": "Finger"
     }
   ],
   "league_ranks": {},
