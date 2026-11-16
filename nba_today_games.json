@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16 03:24",
+  "date": "2026-11-16 11:58",
   "all_games_today": [
     {
       "away_team": "Pacers",
@@ -88,24 +88,24 @@
     {
       "away_team": "Hawks",
       "home_team": "Bucks",
-      "away_score": 109,
+      "away_score": 113,
       "home_score": 106,
-      "score": "109 - 106",
-      "status": "4th Qtr             ",
+      "score": "113 - 106",
+      "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT00M54.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Thunder",
       "home_team": "Kings",
-      "away_score": 62,
-      "home_score": 50,
-      "score": "62 - 50",
-      "status": "Halftime            ",
-      "quarter": 2,
-      "time_remaining": "PT00M00.00S",
+      "away_score": 125,
+      "home_score": 103,
+      "score": "125 - 103",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
