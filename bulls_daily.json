@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-15",
+  "date": "2026-11-16",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -10,12 +10,6 @@
   "win_probability": null,
   "win_explanation": "",
   "injuries": [
-    {
-      "player": "Claxton",
-      "position": "C",
-      "injury": "Sun, Nov 15",
-      "status": "Hamstring"
-    },
     {
       "player": "Smith",
       "position": "C",
