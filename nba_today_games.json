@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-17 04:08",
+  "date": "2026-11-17 13:27",
   "all_games_today": [
     {
       "away_team": "Magic",
@@ -88,12 +88,12 @@
     {
       "away_team": "Suns",
       "home_team": "Nuggets",
-      "away_score": 97,
-      "home_score": 82,
-      "score": "97 - 82",
-      "status": "4th Qtr             ",
+      "away_score": 117,
+      "home_score": 105,
+      "score": "117 - 105",
+      "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT10M14.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
