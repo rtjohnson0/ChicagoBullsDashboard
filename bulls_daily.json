@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "bulls_season_stats": {},
   "next_game": {
     "date": null,
@@ -11,9 +11,9 @@
   "win_explanation": "",
   "injuries": [
     {
-      "player": "Smith",
-      "position": "C",
-      "injury": "Sun, Nov 15",
+      "player": "Williams",
+      "position": "PF",
+      "injury": "Mon, Nov 16",
       "status": "Finger"
     }
   ],
