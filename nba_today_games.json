@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-21 03:34",
+  "date": "2026-11-21 11:40",
   "all_games_today": [
     {
       "away_team": "Hornets",
@@ -76,36 +76,36 @@
     {
       "away_team": "Suns",
       "home_team": "Jazz",
-      "away_score": 52,
-      "home_score": 42,
-      "score": "52 - 42",
-      "status": "2nd Qtr             ",
-      "quarter": 2,
-      "time_remaining": "PT05M003.00S",
+      "away_score": 111,
+      "home_score": 101,
+      "score": "111 - 101",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Rockets",
       "home_team": "Nuggets",
-      "away_score": 26,
-      "home_score": 26,
-      "score": "26 - 26",
-      "status": "1st Qtr             ",
-      "quarter": 1,
-      "time_remaining": "PT02M49.00S",
+      "away_score": 124,
+      "home_score": 133,
+      "score": "124 - 133",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Kings",
       "home_team": "Lakers",
-      "away_score": 23,
-      "home_score": 22,
-      "score": "23 - 22",
-      "status": "1st Qtr             ",
-      "quarter": 1,
-      "time_remaining": "PT02M26.00S",
+      "away_score": 104,
+      "home_score": 106,
+      "score": "104 - 106",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
