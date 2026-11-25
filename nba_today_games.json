@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25 04:31",
+  "date": "2026-11-25 14:51",
   "all_games_today": [
     {
       "away_team": "Pistons",
@@ -28,12 +28,12 @@
     {
       "away_team": "Mavericks",
       "home_team": "Nuggets",
-      "away_score": 65,
-      "home_score": 49,
-      "score": "65 - 49",
-      "status": "3rd Qtr             ",
-      "quarter": 3,
-      "time_remaining": "PT08M33.00S",
+      "away_score": 120,
+      "home_score": 101,
+      "score": "120 - 101",
+      "status": "Final",
+      "quarter": 4,
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
