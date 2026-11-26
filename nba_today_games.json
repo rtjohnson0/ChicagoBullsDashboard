@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-26 05:22",
+  "date": "2026-11-26 15:40",
   "all_games_today": [
     {
       "away_team": "Heat",
@@ -88,24 +88,24 @@
     {
       "away_team": "Kings",
       "home_team": "Warriors",
-      "away_score": 102,
-      "home_score": 123,
-      "score": "102 - 123",
-      "status": "4th Qtr             ",
+      "away_score": 110,
+      "home_score": 129,
+      "score": "110 - 129",
+      "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT01M18.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     },
     {
       "away_team": "Spurs",
       "home_team": "Trail Blazers",
-      "away_score": 100,
-      "home_score": 101,
-      "score": "100 - 101",
-      "status": "4th Qtr             ",
+      "away_score": 111,
+      "home_score": 116,
+      "score": "111 - 116",
+      "status": "Final",
       "quarter": 4,
-      "time_remaining": "PT05M34.00S",
+      "time_remaining": "",
       "is_live": true,
       "is_completed": false
     }
